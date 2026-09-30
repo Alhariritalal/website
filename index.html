@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+  BABA GHANOUJ RESTAURANT  |  مطعم بابا غنوج  |  baba-ghanouj.com
+  الصفحة الرئيسية — بناء سايبر بيكسل
+================================================================================
+
+  HOW TO EDIT THIS SITE  |  كيف تعدّل هذا الموقع
+  ------------------------------------------------------------------------------
+  1) كل الإعدادات (واتساب، الهاتف، البريد، العنوان، أوقات العمل، الخريطة،
+     السوشال ميديا، الألوان) موجودة في بلوك واحد اسمه CONFIG بالأسفل مباشرة.
+     غيّر القيمة مرة واحدة → تتغير في كل الصفحة.
+
+  2) قائمة الطعام في صفحة منفصلة اسمها  menu.html
+     ومحتواها في ملف  menu-data.json  تعدّله من صفحة الإدارة  admin.html
+
+  3) الملفات المطلوبة بجانب هذا الملف:
+        index.html       ← هذه الصفحة
+        menu.html        ← صفحة القائمة (زر "اطلب الآن")
+        menu-data.json   ← محتوى القائمة
+        admin.html       ← إدارة القائمة
+        logo.png         ← الشعار
+        banner.png       ← صورة البانر في الواجهة (اختيارية)
+
+  4) لا تعدّل أي شيء تحت سطر  "END OF CONFIG"  إلا إذا كنت مطوراً.
+================================================================================
+-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baba Ghanouj Restaurant Sharjah | Syrian Falafel, Hummus &amp; Manakish | مطعم بابا غنوج الشارقة</title>
+<meta name="description" content="Baba Ghanouj Restaurant, Al Khan Sharjah — authentic Syrian breakfast, falafel, hummus, foul, fatteh, manakish and fresh juices. Open daily 7 AM – 2 AM. Order on WhatsApp. مطعم بابا غنوج الخان الشارقة — فطور شامي أصيل، فلافل، حمص، فول، فتة ومناقيش.">
+<meta name="keywords" content="Baba Ghanouj Sharjah, مطعم بابا غنوج, Syrian restaurant Sharjah, falafel Sharjah, hummus Sharjah, فلافل الشارقة, حمص الشارقة, فطور شامي, مناقيش الشارقة, Al Khan restaurant, مطعم الخان, manakish Sharjah, foul Sharjah, Syrian breakfast UAE, فتة شامية, مكدوس, شاورما الشارقة">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F2EEE3">
+<link rel="canonical" href="https://baba-ghanouj.com/">
+<link rel="alternate" hreflang="en" href="https://baba-ghanouj.com/?lang=en">
+<link rel="alternate" hreflang="ar" href="https://baba-ghanouj.com/?lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://baba-ghanouj.com/">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Baba Ghanouj Restaurant">
+<meta property="og:title" content="Baba Ghanouj Restaurant Sharjah | مطعم بابا غنوج">
+<meta property="og:description" content="Authentic Syrian falafel, hummus, foul, fatteh and manakish in Al Khan, Sharjah. Open daily 7 AM – 2 AM. حلّت البركة.">
+<meta property="og:url" content="https://baba-ghanouj.com/">
+<meta property="og:image" content="https://baba-ghanouj.com/banner.png">
+<meta property="og:locale" content="en_AE">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baba Ghanouj Restaurant Sharjah | مطعم بابا غنوج">
+<meta name="twitter:description" content="Authentic Syrian falafel, hummus, foul, fatteh and manakish in Al Khan, Sharjah.">
+<meta name="twitter:image" content="https://baba-ghanouj.com/banner.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<script>
+/* ============================================================================
+   CONFIG  —  عدّل من هنا فقط
+   ========================================================================= */
+var CONFIG = {
+
+  /* --- واتساب --- رقم واحد لكل أزرار الطلب في الموقع وصفحة القائمة
+     الصيغة: رمز الدولة + الرقم، بدون + وبدون مسافات */
+  whatsapp:     "971555914914",
+
+  /* --- الهاتف والبريد --- */
+  phone:        "+971 6 537 5445",
+  phoneDial:    "+97165375445",
+  email:        "info@baba-ghanouj.com",
+
+  /* --- العنوان والخريطة --- */
+  addressEn:    "Al Khazna Building, Shop 1, 83 Al Khan Street, Sharjah, UAE",
+  addressAr:    "بناية الخزنة، محل رقم 1، شارع الخان 83، الشارقة، الإمارات",
+  mapQuery:     "Baba+Ghanouj+Restaurant+Al+Khan+Street+Sharjah",
+  mapLink:      "https://www.google.com/maps/search/?api=1&query=Baba+Ghanouj+Restaurant+Al+Khan+Sharjah",
+
+  /* --- أوقات العمل --- */
+  hoursEn:      "Daily · 7:00 AM – 2:00 AM",
+  hoursAr:      "يومياً · ٧:٠٠ صباحاً – ٢:٠٠ بعد منتصف الليل",
+
+  /* --- السوشال ميديا (اترك "" لإخفاء الأيقونة) --- */
+  instagram:    "https://www.instagram.com/babaghanouj.uae/",
+  facebook:     "https://www.facebook.com/babghanouj.uae",
+  tiktok:       "",
+
+  /* --- الألوان (خلفية فاتحة بالكامل) --- */
+  colCream:     "#F2EEE3",   /* لون الخلفية الرئيسي */
+  colCream2:    "#FBF8F1",   /* لون البطاقات — أفتح قليلاً */
+  colGreen:     "#91BE25",   /* أخضر الشعار */
+  colGreenDeep: "#4E6A10",   /* أخضر غامق — للنصوص الصغيرة */
+  colInk:       "#2B2620",   /* لون العناوين والنصوص */
+
+  /* --- أرقام قسم الإحصائيات --- */
+  statYears:    "12",
+  statItems:    "197",
+  statSeats:    "50",
+  statHours:    "19",
+
+  /* --- صورة البانر في الواجهة ---
+     ضع الصورة باسم  banner.png  بجانب هذا الملف.
+     المقاس المفضل: عرض 1200 × ارتفاع 1500 بكسل (أو أي صورة عمودية).
+     إذا لم تكن الصورة موجودة تختفي تلقائياً ويبقى النص في المنتصف. */
+  banner:       "banner.png",
+
+  /* --- رابط صفحة القائمة --- */
+  menuPage:     "menu.html"
+};
+/* ====================== END OF CONFIG — لا تعدّل بعد هنا ================== */
+</script>
+
+<style>
+:root{
+  --cream:#F2EEE3; --cream2:#FBF8F1;
+  --green:#91BE25; --green-deep:#4E6A10;
+  --ink:#2B2620; --muted:#6E665C;
+  --line:rgba(43,38,32,.14);
+  --display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --body:'Jost','Helvetica Neue',Arial,sans-serif;
+  --arabic:'Cairo','Segoe UI',Tahoma,sans-serif;
+  --r-lg:48px; --r-sm:8px;
+  color-scheme:light;
+}
+@media (max-width:768px){ :root{ --r-lg:28px; } }
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:var(--body);font-weight:300;font-size:1rem;line-height:1.7;overflow-x:hidden;
+}
+html[lang="ar"] body{font-family:var(--arabic);font-weight:400;line-height:1.9}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[hidden]{display:none!important}
+::selection{background:var(--green);color:var(--ink)}
+section[id],[id]{scroll-margin-top:96px}
+
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:600;color:var(--ink)}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:var(--arabic);font-weight:900}
+h1{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.98;letter-spacing:.015em;text-transform:uppercase}
+h2{font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.05;letter-spacing:.015em;text-transform:uppercase}
+html[lang="ar"] h1,html[lang="ar"] h2{text-transform:none;line-height:1.3;letter-spacing:0}
+h3{font-size:1.25rem;line-height:1.3;letter-spacing:0}
+p{color:rgba(43,38,32,.8)}
+
+.eyebrow{
+  font-family:var(--body);text-transform:uppercase;font-size:.72rem;font-weight:500;
+  letter-spacing:.2em;color:var(--green-deep);
+}
+html[lang="ar"] .eyebrow{font-family:var(--arabic);letter-spacing:.04em;text-transform:none;font-weight:700;font-size:.86rem}
+
+.wrap{max-width:1280px;margin:0 auto;padding-inline:24px}
+@media(min-width:768px){.wrap{padding-inline:48px}}
+@media(min-width:1024px){.wrap{padding-inline:80px}}
+
+section{padding-block:80px}
+@media(min-width:768px){section{padding-block:112px}}
+@media(min-width:1024px){section{padding-block:144px}}
+.band-soft{background:var(--cream2)}
+
+.sec-head{text-align:center;max-width:62ch;margin:0 auto 56px}
+.sec-head .eyebrow{display:block;margin-bottom:18px}
+.sec-head p{margin:20px auto 0;max-width:60ch}
+.rule{width:160px;height:1px;background:var(--green);opacity:.55;margin:28px auto 0;border:0}
+
+/* ---------- header ---------- */
+header.site{
+  position:fixed;inset-block-start:0;inset-inline:0;z-index:70;
+  padding-block:14px;padding-top:calc(14px + env(safe-area-inset-top,0px));
+  background:rgba(242,238,227,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;
+}
+header.site.solid{border-bottom-color:var(--line);box-shadow:0 8px 28px -22px rgba(43,38,32,.5)}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:42px;width:auto}
+.brand .wm{font-family:var(--body);text-transform:uppercase;font-size:.78rem;letter-spacing:.22em;color:var(--ink);font-weight:400;white-space:nowrap}
+html[lang="ar"] .brand .wm{font-family:var(--arabic);letter-spacing:.02em;text-transform:none;font-weight:700}
+@media(max-width:560px){.brand .wm{display:none}}
+.hright{display:flex;align-items:center;gap:8px}
+.hcta{
+  display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--ink);
+  padding:11px 20px;border-radius:999px 999px 12px 999px;
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
+  transition:background .25s,color .25s
+}
+html[lang="ar"] .hcta{letter-spacing:.02em;text-transform:none;font-size:.86rem;font-weight:700}
+.hcta:hover{background:var(--green-deep);color:var(--cream)}
+.hcta svg{width:15px;height:15px}
+@media(max-width:700px){.hcta span{display:none}.hcta{padding:11px 14px}}
+.langbtn{
+  font-family:var(--body);text-transform:uppercase;font-size:.7rem;letter-spacing:.18em;
+  color:var(--ink);padding:10px 14px;border:1px solid var(--line);
+  border-radius:999px 999px 12px 999px;transition:background .25s,color .25s
+}
+html[lang="ar"] .langbtn{font-family:var(--arabic)}
+.langbtn:hover{background:var(--ink);color:var(--cream)}
+.burger{width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--line);border-radius:999px 999px 12px 999px;transition:background .25s}
+.burger:hover{background:rgba(43,38,32,.06)}
+.burger span{display:block;width:20px;height:1.5px;background:var(--ink);margin:3px 0;transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-4.5px) rotate(-45deg)}
+
+.overlay{
+  position:fixed;inset:0;z-index:65;background:var(--cream);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;
+  opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s;
+  padding:96px 24px 40px;overflow-y:auto;
+}
+.overlay.on{opacity:1;visibility:visible}
+.overlay a{
+  font-family:var(--display);text-transform:uppercase;font-size:clamp(1.5rem,5vw,2.4rem);
+  color:var(--ink);letter-spacing:.02em;padding:8px 0;opacity:0;transform:translateY(14px);transition:color .25s
+}
+html[lang="ar"] .overlay a{font-family:var(--arabic);text-transform:none;font-weight:700}
+.overlay.on a{animation:navIn .5s cubic-bezier(.22,1,.36,1) forwards}
+.overlay a:hover{color:var(--green-deep)}
+.overlay a.hi{color:var(--green-deep)}
+@keyframes navIn{to{opacity:1;transform:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100svh;display:grid;place-items:center;
+  text-align:center;padding:108px 24px 72px;background:var(--cream);overflow:hidden
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.hero-in{position:relative;z-index:2;max-width:56rem;width:100%}
+.hero .eyebrow{display:block;margin-bottom:22px}
+.hero h1{margin-bottom:22px}
+.hero h1 .accent{color:var(--green-deep);display:block}
+.hero p{max-width:36rem;margin:0 auto 36px;font-size:1.06rem}
+.ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+@media(max-width:959px){
+  .hero h1{font-size:clamp(2.1rem,8.5vw,3rem);margin-bottom:16px}
+  .hero .eyebrow{margin-bottom:16px;font-size:.66rem}
+  html[lang="ar"] .hero .eyebrow{font-size:.8rem}
+  .hero p{margin-bottom:26px;font-size:.98rem}
+  .hero-banner{margin-top:30px;aspect-ratio:16/10}
+}
+@media(max-width:420px),(max-height:780px) and (max-width:959px){
+  .hero{padding-top:98px;padding-bottom:60px}
+  .hero h1{font-size:clamp(1.95rem,8vw,2.6rem);margin-bottom:14px}
+  .hero p{margin-bottom:22px;font-size:.94rem;line-height:1.6}
+  html[lang="ar"] .hero p{line-height:1.8}
+  .btn{padding:15px 26px}
+}
+
+/* banner.png beside the text — the background stays cream, no dark scrim */
+.hero-grid{display:grid;gap:44px;align-items:center;width:100%;max-width:1180px;position:relative;z-index:2}
+.hero-banner{margin:38px auto 0;width:100%;max-width:560px;
+  border-radius:24px 24px 24px 4px;overflow:hidden;aspect-ratio:16/11;
+  background:var(--cream2);border:1px solid var(--line)}
+.hero-banner img{width:100%;height:100%;object-fit:cover}
+@media(min-width:960px){
+  .hero{text-align:start;padding-block:120px 80px}
+  .hero-grid{grid-template-columns:1fr .92fr;gap:56px}
+  .hero-in{max-width:none}
+  .hero-in h1{font-size:clamp(2.4rem,4vw,3.9rem);margin-bottom:18px}
+  .hero .eyebrow{margin-bottom:16px}
+  .hero p{margin:0 0 30px;max-width:32rem}
+  .ctas{justify-content:flex-start}
+  .hero-banner{margin:0;max-width:none;aspect-ratio:4/5;max-height:74svh}
+}
+@media(min-width:1280px){
+  .hero-in h1{font-size:clamp(2.8rem,4.4vw,4.4rem)}
+}
+.hero.no-banner{text-align:center}
+.hero.no-banner .hero-grid{grid-template-columns:1fr;max-width:56rem}
+.hero.no-banner .hero p{margin-inline:auto}
+.hero.no-banner .ctas{justify-content:center}
+.hero.no-banner .hero-banner{display:none}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:17px 32px;
+  border-radius:999px 999px 12px 999px;font-family:var(--body);text-transform:uppercase;
+  font-size:.75rem;font-weight:500;letter-spacing:.18em;transition:background .28s,color .28s,border-color .28s;
+}
+html[lang="ar"] .btn{font-family:var(--arabic);text-transform:none;letter-spacing:.03em;font-weight:700;font-size:.92rem}
+.btn-p{background:var(--green);color:var(--ink)}
+.btn-p:hover{background:var(--green-deep);color:var(--cream)}
+.btn-s{border:1px solid var(--ink);color:var(--ink)}
+.btn-s:hover{background:var(--ink);color:var(--cream)}
+.btn svg{width:17px;height:17px;flex:none}
+.scrollcue{position:absolute;bottom:26px;inset-inline:0;z-index:2;display:flex;justify-content:center}
+.scrollcue span{width:1px;height:46px;background:linear-gradient(var(--green),transparent)}
+
+/* ---------- trust ---------- */
+.trust{background:var(--cream2);padding-block:26px;border-block:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center;align-items:center}
+.trust li{display:flex;align-items:center;gap:9px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(43,38,32,.82)}
+html[lang="ar"] .trust li{letter-spacing:.02em;text-transform:none;font-size:.9rem}
+.trust svg{width:17px;height:17px;color:var(--green-deep);flex:none}
+
+/* ---------- about ---------- */
+.about{max-width:70ch;margin:0 auto;text-align:center}
+.about h2{margin-bottom:24px}
+.about p+p{margin-top:16px}
+.sig{margin-top:30px;font-family:var(--arabic);font-size:1.7rem;font-weight:900;color:var(--green-deep)}
+
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:72px}
+@media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{text-align:center}
+.stat b{display:block;font-family:var(--display);font-size:clamp(2.2rem,5vw,3.2rem);color:var(--green-deep);line-height:1;font-weight:600}
+html[lang="ar"] .stat b{font-family:var(--arabic);font-weight:900}
+.stat small{display:block;margin-top:10px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(43,38,32,.75)}
+html[lang="ar"] .stat small{letter-spacing:.02em;text-transform:none;font-size:.88rem}
+.stat hr{width:120px;height:1px;border:0;background:var(--ink);opacity:.18;margin:16px auto 0}
+
+/* ---------- difference ---------- */
+.diff{display:grid;gap:20px}
+@media(min-width:640px){.diff{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.diff{grid-template-columns:repeat(4,1fr)}}
+.dcard{
+  background:var(--cream);border:1px solid var(--line);
+  padding:32px 26px 30px;border-radius:32px 8px 32px 8px;position:relative;overflow:hidden;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease
+}
+.dcard:nth-child(even){border-radius:8px 32px 8px 32px}
+.dcard:hover{transform:translateY(-4px);border-color:var(--green);box-shadow:0 24px 60px -34px rgba(43,38,32,.5)}
+.dcard .num{font-family:var(--display);font-size:2.5rem;color:var(--green);opacity:.75;line-height:1;font-weight:600}
+.dcard .orn{position:absolute;inset-block-start:26px;inset-inline-end:24px;width:20px;height:20px;color:var(--green)}
+.dcard h3{margin:18px 0 10px;font-size:1.22rem}
+.dcard p{font-size:.9rem;margin:0;line-height:1.65;color:rgba(43,38,32,.75)}
+
+/* ---------- menu promo ---------- */
+.promo{text-align:center}
+.promo .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:36px 0 40px}
+.promo .chips span{
+  border:1px solid var(--line);background:var(--cream);border-radius:999px 999px 12px 999px;
+  padding:10px 18px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(43,38,32,.8)
+}
+html[lang="ar"] .promo .chips span{letter-spacing:.02em;text-transform:none;font-size:.9rem}
+.promo .wide{max-width:640px;margin:0 auto;justify-content:center;width:100%}
+
+/* ---------- spec ---------- */
+.spec{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 24px}
+@media(min-width:900px){.spec{grid-template-columns:repeat(4,1fr)}}
+.spec div{text-align:center}
+.spec .badge{width:56px;height:56px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin:0 auto 18px}
+.spec .badge svg{width:24px;height:24px;color:var(--ink)}
+.spec b{display:block;font-family:var(--body);font-size:1.1rem;font-weight:500;color:var(--ink)}
+html[lang="ar"] .spec b{font-family:var(--arabic);font-weight:700}
+.spec small{display:block;margin-top:6px;font-size:.88rem;color:rgba(43,38,32,.85)}
+.spec hr{width:120px;height:1px;border:0;background:var(--ink);opacity:.18;margin:16px auto 0}
+
+/* ---------- faq ---------- */
+.faq{max-width:820px;margin:0 auto}
+.q{border-block-end:1px solid var(--line)}
+.q button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:24px 0;text-align:start;font-size:1.02rem;color:var(--ink);font-weight:400}
+html[lang="ar"] .q button{font-weight:600}
+.q button .ic{flex:none;width:20px;height:20px;position:relative}
+.q button .ic::before,.q button .ic::after{content:"";position:absolute;background:var(--green-deep);inset-block-start:50%;inset-inline-start:0;width:100%;height:1.5px;transition:transform .3s}
+.q button .ic::after{transform:rotate(90deg)}
+.q.on button .ic::after{transform:rotate(0)}
+.q .a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.q .a p{padding:0 0 24px;margin:0;max-width:64ch}
+
+/* ---------- contact ---------- */
+.cgrid{display:grid;gap:44px}
+@media(min-width:980px){.cgrid{grid-template-columns:1fr 1.15fr;gap:64px}}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-block-end:1px solid var(--line)}
+.crow svg{width:19px;height:19px;color:var(--green-deep);flex:none;margin-top:4px}
+.crow b{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(43,38,32,.78);font-weight:500;margin-bottom:3px}
+html[lang="ar"] .crow b{letter-spacing:.02em;text-transform:none;font-size:.82rem;font-weight:700}
+.mapbox{border-radius:24px 24px 24px 4px;overflow:hidden;min-height:340px;background:var(--cream2);border:1px solid var(--line)}
+.mapbox iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+
+/* ---------- footer ---------- */
+footer{background:var(--cream2);border-top:1px solid var(--line);padding-block:72px 28px}
+.fgrid{display:grid;gap:40px}
+@media(min-width:800px){.fgrid{grid-template-columns:1.2fr 1fr 1fr}}
+.fbrand img{width:190px;margin-bottom:18px}
+.fwm{font-family:var(--body);text-transform:uppercase;letter-spacing:.22em;font-size:.82rem;color:var(--ink)}
+html[lang="ar"] .fwm{font-family:var(--arabic);letter-spacing:.02em;text-transform:none;font-weight:700}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:var(--cream)}
+.socials svg{width:18px;height:18px}
+.fcol h4{margin:0 0 16px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(43,38,32,.78);font-weight:500;font-family:var(--body)}
+html[lang="ar"] .fcol h4{font-family:var(--arabic);letter-spacing:.02em;text-transform:none;font-size:.86rem;font-weight:700}
+.fcol a,.fcol p{display:block;margin:0 0 10px;font-size:.92rem;color:rgba(43,38,32,.82)}
+.fcol a:hover{color:var(--green-deep)}
+.fbot{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(43,38,32,.8)}
+html[lang="ar"] .fbot{letter-spacing:.02em;text-transform:none;font-size:.84rem}
+
+/* ---------- floating whatsapp ---------- */
+.float-cta{
+  position:fixed;z-index:60;inset-block-end:calc(18px + env(safe-area-inset-bottom,0px));
+  inset-inline-end:18px;display:inline-flex;align-items:center;gap:9px;
+  padding:14px 22px;border-radius:999px 999px 12px 999px;
+  background:var(--green);color:var(--ink);
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
+  box-shadow:0 22px 50px -22px rgba(43,38,32,.6);
+  opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .35s,transform .35s,background .25s,color .25s
+}
+html[lang="ar"] .float-cta{letter-spacing:.02em;text-transform:none;font-size:.88rem;font-weight:700}
+.float-cta.show{opacity:1;transform:none;pointer-events:auto}
+.float-cta:hover{background:var(--green-deep);color:var(--cream)}
+.float-cta svg{width:18px;height:18px}
+@media(max-width:600px){.float-cta{inset-inline-end:14px;padding:13px 18px}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px)}
+.rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site" id="hdr">
+  <div class="wrap hbar">
+    <a href="#top" class="brand">
+      <img src="logo.png" alt="Baba Ghanouj Restaurant logo — شعار مطعم بابا غنوج" width="667" height="374">
+      <span class="wm" data-i18n="Baba Ghanouj">Baba Ghanouj</span>
+    </a>
+    <div class="hright">
+      <a class="hcta" id="hdrCta" href="menu.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <span data-i18n="Order Now">Order Now</span>
+      </a>
+      <button class="langbtn" id="langBtn" aria-label="Switch language">العربية</button>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="overlay" id="ov" aria-hidden="true">
+  <a class="hi" id="ovMenu" href="menu.html" data-i18n="Order Now">Order Now</a>
+  <a href="#about" data-i18n="Our Story">Our Story</a>
+  <a href="#difference" data-i18n="Why Us">Why Us</a>
+  <a href="#faq" data-i18n="FAQ">FAQ</a>
+  <a href="#contact" data-i18n="Visit Us">Visit Us</a>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+  <div class="hero-in">
+    <span class="eyebrow" data-i18n="Al Khan · Sharjah · Since 2013">Al Khan · Sharjah · Since 2013</span>
+    <h1><span data-i18n="The Levant,">The Levant,</span><span class="accent" data-i18n="On One Plate">On One Plate</span></h1>
+    <p data-i18n="Syrian breakfast the way Aleppo and Damascus have always made it — falafel fried to order, hummus whipped every morning, manakish straight from the oven.">Syrian breakfast the way Aleppo and Damascus have always made it — falafel fried to order, hummus whipped every morning, manakish straight from the oven.</p>
+    <div class="ctas">
+      <a class="btn btn-p" id="heroMenu" href="menu.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <span data-i18n="Order Now">Order Now</span>
+      </a>
+      <a class="btn btn-s" id="heroWa" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-4-1L3 20l1.1-4.9A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4Z"/></svg>
+        <span data-i18n="Chat on WhatsApp">Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+  <figure class="hero-banner" id="heroBanner" style="margin-block:0">
+    <img id="heroBannerImg" alt="Baba Ghanouj — مطعم بابا غنوج" width="1200" height="1500">
+  </figure>
+  </div>
+  <div class="scrollcue"><span></span></div>
+</section>
+
+<!-- ============================ TRUST ============================ -->
+<div class="trust">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="Open 7 AM – 2 AM daily">Open 7 AM – 2 AM daily</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h10v10H3Z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><span data-i18n="Delivery across Sharjah">Delivery across Sharjah</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 5v6a3 3 0 0 0 3 3M17 5c0 4-1.5 5-1.5 5V21"/></svg><span data-i18n="Fresh daily, nothing frozen">Fresh daily, nothing frozen</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.5 6 .9-4.3 4.3 1 6.1-5.3-2.9-5.3 2.9 1-6.1L3.4 9.4l6-.9Z"/></svg><span data-i18n="197 dishes on the menu">197 dishes on the menu</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about rv">
+      <span class="eyebrow" data-i18n="Our Story">Our Story</span>
+      <h2 style="margin-top:16px"><span data-i18n="Aleppo Taught Us">Aleppo Taught Us</span><br><span data-i18n="How To Feed People">How To Feed People</span></h2>
+      <p data-i18n="Baba Ghanouj began with a simple idea: that a plate of hummus should taste the way it tastes at home in Aleppo, and that nobody should leave hungry. Every chickpea is soaked overnight, every falafel is shaped and fried when you order it, and the saj bread never waits.">Baba Ghanouj began with a simple idea: that a plate of hummus should taste the way it tastes at home in Aleppo, and that nobody should leave hungry. Every chickpea is soaked overnight, every falafel is shaped and fried when you order it, and the saj bread never waits.</p>
+      <p data-i18n="From the first fatteh of the morning to the last manqousha at two in the morning, our kitchen on Al Khan Street runs on one rule — cook it the way you would cook it for your own family.">From the first fatteh of the morning to the last manqousha at two in the morning, our kitchen on Al Khan Street runs on one rule — cook it the way you would cook it for your own family.</p>
+      <div class="sig" dir="rtl">حلّت البَرَكة</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat rv"><b id="stYears">12</b><small data-i18n="Years in Sharjah">Years in Sharjah</small><hr></div>
+      <div class="stat rv"><b id="stItems">200</b><small data-i18n="Dishes on the menu">Dishes on the menu</small><hr></div>
+      <div class="stat rv"><b id="stSeats">50</b><small data-i18n="Seats indoor & outdoor">Seats indoor &amp; outdoor</small><hr></div>
+      <div class="stat rv"><b id="stHours">19</b><small data-i18n="Hours open every day">Hours open every day</small><hr></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DIFFERENCE ============================ -->
+<section class="band-soft" id="difference">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-i18n="The Difference">The Difference</span>
+      <h2 data-i18n="Why People Come Back">Why People Come Back</h2>
+      <p data-i18n="Four things we refuse to compromise on, no matter how busy the morning gets.">Four things we refuse to compromise on, no matter how busy the morning gets.</p>
+      <hr class="rule">
+    </div>
+    <div class="diff">
+      <div class="dcard rv"><span class="num">01</span><svg class="orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 8.2L22 12l-8.2 1.8L12 22l-1.8-8.2L2 12l8.2-1.8Z"/></svg><h3 data-i18n="Fried to your order">Fried to your order</h3><p data-i18n="Falafel is never pre-fried and never reheated. It goes into the oil after you ask for it — that is why it arrives crackling.">Falafel is never pre-fried and never reheated. It goes into the oil after you ask for it — that is why it arrives crackling.</p></div>
+      <div class="dcard rv"><span class="num">02</span><svg class="orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 8.2L22 12l-8.2 1.8L12 22l-1.8-8.2L2 12l8.2-1.8Z"/></svg><h3 data-i18n="Levantine, not generic">Levantine, not generic</h3><p data-i18n="Syrian, Lebanese, Palestinian and Egyptian foul each have their own recipe on our menu. We do not blend them into one.">Syrian, Lebanese, Palestinian and Egyptian foul each have their own recipe on our menu. We do not blend them into one.</p></div>
+      <div class="dcard rv"><span class="num">03</span><svg class="orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 8.2L22 12l-8.2 1.8L12 22l-1.8-8.2L2 12l8.2-1.8Z"/></svg><h3 data-i18n="Family sizes, family prices">Family sizes, family prices</h3><p data-i18n="Every mezze comes regular, medium or family. A full table eats well without anyone checking the bill twice.">Every mezze comes regular, medium or family. A full table eats well without anyone checking the bill twice.</p></div>
+      <div class="dcard rv"><span class="num">04</span><svg class="orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 8.2L22 12l-8.2 1.8L12 22l-1.8-8.2L2 12l8.2-1.8Z"/></svg><h3 data-i18n="The pantry travels home">The pantry travels home</h3><p data-i18n="Makdous by the kilo, labneh balls in oil, frozen kibbeh and our falafel mix — take the kitchen with you.">Makdous by the kilo, labneh balls in oil, frozen kibbeh and our falafel mix — take the kitchen with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MENU PROMO ============================ -->
+<section class="promo" id="menu">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow" data-i18n="The Menu">The Menu</span>
+      <h2 style="margin-top:16px" data-i18n="197 Dishes, One Tap Away">197 Dishes, One Tap Away</h2>
+      <p style="max-width:58ch;margin:20px auto 0" data-i18n="Open the menu, pick what you want, and the order button sends it straight to us on WhatsApp.">Open the menu, pick what you want, and the order button sends it straight to us on WhatsApp.</p>
+      <div class="chips">
+        <span data-i18n="Shami Dishes">Shami Dishes</span>
+        <span data-i18n="Falafel & Subsidiaries">Falafel & Subsidiaries</span>
+        <span data-i18n="Manaqeesh">Manaqeesh</span>
+        <span data-i18n="Sandwiches">Sandwiches</span>
+        <span data-i18n="Fattat Shameih">Fattat Shameih</span>
+        <span data-i18n="Fakhara & Fries">Fakhara & Fries</span>
+        <span data-i18n="Pizza">Pizza</span>
+        <span data-i18n="Salads">Salads</span>
+        <span data-i18n="Juices & Cold Drinks">Juices & Cold Drinks</span>
+      </div>
+      <a class="btn btn-p wide" id="promoCta" href="menu.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <span data-i18n="Order Now">Order Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SPEC STRIP ============================ -->
+<section class="band-soft">
+  <div class="wrap">
+    <div class="spec">
+      <div class="rv">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <b data-i18n="Opening hours">Opening hours</b><small id="specHours"></small><hr>
+      </div>
+      <div class="rv">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+        <b data-i18n="Find us">Find us</b><small id="specAddr"></small><hr>
+      </div>
+      <div class="rv">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h10v10H3Z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div>
+        <b data-i18n="Delivery">Delivery</b><small data-i18n="Across Sharjah — order on WhatsApp">Across Sharjah — order on WhatsApp</small><hr>
+      </div>
+      <div class="rv">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20v-3a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v3"/><circle cx="12" cy="7" r="3.4"/></svg></div>
+        <b data-i18n="Seating">Seating</b><small data-i18n="50 seats, indoor & outdoor">50 seats, indoor &amp; outdoor</small><hr>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-i18n="Good To Know">Good To Know</span>
+      <h2 data-i18n="Questions We Get">Questions We Get</h2>
+      <hr class="rule">
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="band-soft" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-i18n="Visit Us">Visit Us</span>
+      <h2 data-i18n="Al Khan Street, Sharjah">Al Khan Street, Sharjah</h2>
+      <hr class="rule">
+    </div>
+    <div class="cgrid">
+      <div class="rv">
+        <a class="crow" id="cPhone" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></svg><span><b data-i18n="Call us">Call us</b><span id="cPhoneTxt"></span></span></a>
+        <a class="crow" id="cWa" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-4-1L3 20l1.1-4.9A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4Z"/></svg><span><b data-i18n="WhatsApp">WhatsApp</b><span id="cWaTxt"></span></span></a>
+        <a class="crow" id="cMail" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><b data-i18n="Email">Email</b><span id="cMailTxt"></span></span></a>
+        <a class="crow" id="cMap" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b data-i18n="Address">Address</b><span id="cAddr"></span></span></a>
+        <div class="crow" style="border:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b data-i18n="Opening hours">Opening hours</b><span id="cHours"></span></span></div>
+      </div>
+      <div class="mapbox rv"><iframe id="map" title="Baba Ghanouj Restaurant location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <img src="logo.png" alt="Baba Ghanouj — مطعم بابا غنوج" width="667" height="374" loading="lazy">
+        <div class="fwm">Baba Ghanouj · بابا غنوج</div>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div class="fcol">
+        <h4 data-i18n="Explore">Explore</h4>
+        <a href="menu.html" data-i18n="Order Now">Order Now</a>
+        <a href="#about" data-i18n="Our Story">Our Story</a>
+        <a href="#difference" data-i18n="Why Us">Why Us</a>
+        <a href="#faq" data-i18n="FAQ">FAQ</a>
+        <a href="#contact" data-i18n="Visit Us">Visit Us</a>
+      </div>
+      <div class="fcol">
+        <h4 data-i18n="Contact">Contact</h4>
+        <a id="fWa" href="#"></a>
+        <a id="fPhone" href="#"></a>
+        <a id="fMail" href="#"></a>
+        <p id="fAddr"></p>
+        <p id="fHours"></p>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr"></span> <span data-i18n="Baba Ghanouj Restaurant. All rights reserved.">Baba Ghanouj Restaurant. All rights reserved.</span></span>
+      <span data-i18n="Built by Cyber Pixel">Built by Cyber Pixel</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-cta" id="floatCta" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-4-1L3 20l1.1-4.9A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4Z"/></svg><span data-i18n="WhatsApp">WhatsApp</span></a>
+
+<script type="application/ld+json" id="ldjson"></script>
+
+<script>
+/* ============================================================================
+   I18N — كل النصوص العربية في مكان واحد، مفتاحها هو النص الإنجليزي
+   ========================================================================= */
+var I18N = {
+ "Baba Ghanouj":"بابا غنوج",
+ "Order Now":"اطلب الآن","Chat on WhatsApp":"تواصل عبر واتساب","WhatsApp":"واتساب",
+ "Our Story":"قصتنا","Why Us":"لماذا نحن","FAQ":"أسئلة شائعة","Visit Us":"زورونا",
+ "Al Khan · Sharjah · Since 2013":"الخان · الشارقة · منذ ٢٠١٣",
+ "The Levant,":"نكهة الشام","On One Plate":"في صحن واحد",
+ "Syrian breakfast the way Aleppo and Damascus have always made it — falafel fried to order, hummus whipped every morning, manakish straight from the oven.":"فطور شامي مثل ما بيعملوه بحلب والشام — فلافل تُقلى عند الطلب، حمص يُخفق كل صباح، ومناقيش تخرج من الفرن مباشرة.",
+ "Open 7 AM – 2 AM daily":"مفتوح يومياً ٧ ص – ٢ ف","Delivery across Sharjah":"توصيل داخل الشارقة",
+ "Fresh daily, nothing frozen":"طازج يومياً، ولا شيء مجمّد","197 dishes on the menu":"١٩٧ صنفاً في القائمة",
+ "Aleppo Taught Us":"حلب علّمتنا","How To Feed People":"كيف نُطعم الناس",
+ "Baba Ghanouj began with a simple idea: that a plate of hummus should taste the way it tastes at home in Aleppo, and that nobody should leave hungry. Every chickpea is soaked overnight, every falafel is shaped and fried when you order it, and the saj bread never waits.":"بدأ بابا غنوج بفكرة بسيطة: أن يكون طعم صحن الحمص مثل طعمه في بيوت حلب، وألّا يخرج أحد من عندنا جائعاً. كل حبة حمص تُنقع من الليل، وكل قرص فلافل يُشكّل ويُقلى عند طلبك، وخبز الصاج لا ينتظر.",
+ "From the first fatteh of the morning to the last manqousha at two in the morning, our kitchen on Al Khan Street runs on one rule — cook it the way you would cook it for your own family.":"من أول فتّة في الصباح إلى آخر منقوشة عند الثانية بعد منتصف الليل، مطبخنا في شارع الخان يعمل بقاعدة واحدة — اطبخها كما تطبخها لأهل بيتك.",
+ "Years in Sharjah":"سنة في الشارقة","Dishes on the menu":"صنف في القائمة","Seats indoor & outdoor":"مقعد داخلي وخارجي","Hours open every day":"ساعة عمل يومياً",
+ "The Difference":"الفرق","Why People Come Back":"لماذا يعودون إلينا",
+ "Four things we refuse to compromise on, no matter how busy the morning gets.":"أربعة أشياء لا نتنازل عنها مهما ازدحم الصباح.",
+ "Fried to your order":"تُقلى عند طلبك",
+ "Falafel is never pre-fried and never reheated. It goes into the oil after you ask for it — that is why it arrives crackling.":"الفلافل لا تُقلى مسبقاً ولا تُسخّن. تنزل في الزيت بعد طلبك — لهذا تصلك مقرمشة.",
+ "Levantine, not generic":"شامي أصيل، مش عام",
+ "Syrian, Lebanese, Palestinian and Egyptian foul each have their own recipe on our menu. We do not blend them into one.":"الفول السوري واللبناني والفلسطيني والمصري — لكل واحد وصفته الخاصة عندنا. لا نخلطهم في وصفة واحدة.",
+ "Family sizes, family prices":"حجم عائلي وسعر عائلي",
+ "Every mezze comes regular, medium or family. A full table eats well without anyone checking the bill twice.":"كل مقبلاتنا تأتي عادي أو وسط أو عائلي. طاولة كاملة تأكل مليح دون أن يراجع أحد الفاتورة مرتين.",
+ "The pantry travels home":"المونة تسافر معك",
+ "Makdous by the kilo, labneh balls in oil, frozen kibbeh and our falafel mix — take the kitchen with you.":"مكدوس بالكيلو، لبنة كرات بالزيت، كبة مفرزة وعجينة الفلافل — خذ المطبخ معك.",
+ "The Menu":"القائمة","197 Dishes, One Tap Away":"١٩٧ صنفاً على بُعد ضغطة",
+ "Open the menu, pick what you want, and the order button sends it straight to us on WhatsApp.":"افتح القائمة، اختر اللي بدك ياه، وزر الطلب بيبعتلنا الصنف مباشرة على واتساب.",
+ "Falafel & Co.":"الفلافل وتوابعها","Shami Dishes":"الأطباق الشامية","Manakish":"مناقيش",
+ "Sandwiches":"الساندويشات","Fatteh":"فتات شامية","Pizza":"بيتزا","Salads":"السلطات",
+ "Fresh Juices":"العصائر","Syrian Pantry":"مونة البيت الشامية",
+ "Falafel & Subsidiaries":"الفلافل وتوابعه",
+ "Manaqeesh":"مناقيش",
+ "Fattat Shameih":"فتات شامية",
+ "Fakhara & Fries":"فخارة ومقالي",
+ "Juices & Cold Drinks":"العصائر والمشروبات الباردة",
+ "Opening hours":"أوقات العمل","Find us":"موقعنا","Delivery":"التوصيل",
+ "Across Sharjah — order on WhatsApp":"داخل الشارقة — اطلب عبر واتساب",
+ "Seating":"الجلسات","50 seats, indoor & outdoor":"٥٠ مقعداً، داخلي وخارجي",
+ "Good To Know":"معلومات مفيدة","Questions We Get":"أسئلة يسألونا إياها",
+ "Al Khan Street, Sharjah":"شارع الخان، الشارقة",
+ "Call us":"اتصل بنا","Email":"البريد الإلكتروني","Address":"العنوان",
+ "Explore":"تصفّح","Contact":"تواصل معنا",
+ "Baba Ghanouj Restaurant. All rights reserved.":"مطعم بابا غنوج. جميع الحقوق محفوظة.",
+ "Built by Cyber Pixel":"تطوير سايبر بيكسل",
+ "Switch language":"تغيير اللغة"
+};
+
+var FAQ = [
+ ["Do you deliver in Sharjah?","Yes. Send us your location on WhatsApp and we will confirm the delivery time before we start cooking. You can also order pickup and collect from Al Khan Street.",
+  "هل توصّلون داخل الشارقة؟","نعم. ابعتلنا موقعك على واتساب ومنأكدلك وقت التوصيل قبل ما نبلش الطبخ. كمان فيك تطلب استلام من المطعم في شارع الخان."],
+ ["What time do you open?","Every day from 7:00 in the morning until 2:00 after midnight — breakfast, lunch, dinner and late manakish.",
+  "شو أوقات الدوام؟","كل يوم من ٧:٠٠ صباحاً حتى ٢:٠٠ بعد منتصف الليل — فطور وغداء وعشاء ومناقيش بالليل."],
+ ["Do you have vegetarian food?","Most of the menu is vegetarian: falafel, hummus, foul, mutabal, makdous, fatteh, salads, zaatar and cheese manakish, and the whole Syrian pantry section.",
+  "عندكم أكل نباتي؟","معظم القائمة نباتية: فلافل، حمص، فول، متبل، مكدوس، فتّة، سلطات، مناقيش زعتر وجبنة، وقسم المونة الشامية كامل."],
+ ["Can I order for a large group or an event?","Yes. We do combo boxes, mixed appetizer platters, mini manakish for events and family-size mezze. Message us on WhatsApp with the number of people and we will put it together.",
+  "بقدر أطلب لعزيمة أو مناسبة؟","أكيد. عنا علب كومبو، أطباق مقبلات مشكلة، ميني مناقيش للمناسبات ومقبلات بالحجم العائلي. راسلنا على واتساب وقلنا عدد الأشخاص ومنجهزلك الطلب."],
+ ["What are the family sizes on the mezze?","Hummus, foul, mutabal and fatteh come in Regular, Medium and Family. The size prices are written under each dish in the menu.",
+  "شو يعني الحجم العائلي بالمقبلات؟","الحمص والفول والمتبل والفتّة بتيجي عادي، وسط، وعائلي. أسعار الأحجام مكتوبة تحت كل صنف في القائمة."],
+ ["Do you sell food to take home uncooked?","Yes — frozen kibbeh and sambousek, shish barak, our falafel mix, makdous by the kilo, labneh balls in oil, pickles and extra virgin olive oil.",
+  "بتبيعوا أكل للبيت غير مطبوخ؟","نعم — كبة وسمبوسك مفرز، شيش برك، عجينة الفلافل، مكدوس بالكيلو، لبنة كرات بالزيت، مخللات وزيت زيتون بكر ممتاز."]
+];
+
+(function(){
+  "use strict";
+  var $=function(s,r){return (r||document).querySelector(s)},
+      $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var C=window.CONFIG, LANG='en';
+
+  var rs=document.documentElement.style;
+  rs.setProperty('--cream',C.colCream); rs.setProperty('--cream2',C.colCream2);
+  rs.setProperty('--green',C.colGreen); rs.setProperty('--green-deep',C.colGreenDeep);
+  rs.setProperty('--ink',C.colInk);
+  var tc=document.querySelector('meta[name="theme-color"]'); if(tc) tc.content=C.colCream;
+
+  function t(k){ return (LANG==='ar' && I18N[k]) ? I18N[k] : k; }
+  function waDigits(){ return String(C.whatsapp).replace(/\D/g,''); }
+  function wa(msg){ return 'https://wa.me/'+waDigits()+'?text='+encodeURIComponent(msg); }
+  function waPretty(){ var d=waDigits(); return '+'+d; }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  var S='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">';
+
+  function applyLang(l,skipStore){
+    LANG=(l==='ar')?'ar':'en';
+    var h=document.documentElement;
+    h.lang=LANG; h.dir=(LANG==='ar')?'rtl':'ltr';
+    $$('[data-i18n]').forEach(function(el){ el.textContent=t(el.getAttribute('data-i18n')); });
+    $('#langBtn').textContent=(LANG==='ar')?'EN':'العربية';
+    $('#langBtn').setAttribute('aria-label',t('Switch language'));
+    fillStatic(); renderFaq(); renderLd();
+    if(!skipStore){ try{localStorage.setItem('bg_lang',LANG);}catch(e){} }
+    var u=new URL(location.href); u.searchParams.set('lang',LANG);
+    history.replaceState(null,'',u.toString());
+    /* carry the language over to the menu page */
+    $$('a[href^="'+C.menuPage+'"]').forEach(function(a){ a.href=C.menuPage+'?lang='+LANG; });
+  }
+
+  function fillStatic(){
+    var ar=(LANG==='ar');
+    $('#specHours').textContent = ar?C.hoursAr:C.hoursEn;
+    $('#specAddr').textContent  = ar?C.addressAr:C.addressEn;
+    $('#cHours').textContent    = ar?C.hoursAr:C.hoursEn;
+    $('#cAddr').textContent     = ar?C.addressAr:C.addressEn;
+    $('#fAddr').textContent     = ar?C.addressAr:C.addressEn;
+    $('#fHours').textContent    = ar?C.hoursAr:C.hoursEn;
+    $('#cPhoneTxt').textContent = C.phone;
+    $('#cWaTxt').textContent    = waPretty();
+    $('#cMailTxt').textContent  = C.email;
+    $('#cPhone').href='tel:'+C.phoneDial;
+    $('#fPhone').href='tel:'+C.phoneDial; $('#fPhone').textContent=C.phone;
+    $('#cMail').href='mailto:'+C.email;
+    $('#fMail').href='mailto:'+C.email; $('#fMail').textContent=C.email;
+    $('#cMap').href=C.mapLink;
+    var greet = ar ? 'مرحباً بابا غنوج 👋 بدي أعمل طلب' : 'Hello Baba Ghanouj 👋 I would like to place an order';
+    ['#heroWa','#floatCta','#cWa','#fWa'].forEach(function(s){
+      var el=$(s); el.href=wa(greet); el.target='_blank'; el.rel='noopener';
+    });
+    $('#fWa').textContent=waPretty()+' · '+t('WhatsApp');
+    $('#stYears').textContent=C.statYears; $('#stItems').textContent=C.statItems;
+    $('#stSeats').textContent=C.statSeats; $('#stHours').textContent=C.statHours;
+    $('#yr').textContent=new Date().getFullYear();
+    $('#map').src='https://www.google.com/maps?q='+C.mapQuery+'&output=embed';
+    var soc=[['instagram',C.instagram,'<circle cx="12" cy="12" r="4"/><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="17.3" cy="6.7" r="1"/>'],
+             ['facebook',C.facebook,'<path d="M14 8.5h2.5V5.5H14c-2 0-3.5 1.5-3.5 3.5v2H8.5v3h2V21h3v-7h2.3l.5-3H13.5V9.2c0-.4.2-.7.5-.7Z"/>'],
+             ['tiktok',C.tiktok,'<path d="M14 4v9.8a3.2 3.2 0 1 1-2.6-3.15"/><path d="M14 4c.5 2.2 2 3.6 4.3 3.8"/>']];
+    $('#socials').innerHTML = soc.filter(function(s){return s[1];}).map(function(s){
+      return '<a href="'+s[1]+'" target="_blank" rel="noopener" aria-label="'+s[0]+'">'+S+s[2]+'</svg></a>';
+    }).join('');
+  }
+
+  function renderFaq(){
+    var ar=(LANG==='ar');
+    $('#faqList').innerHTML = FAQ.map(function(f){
+      return '<div class="q"><button type="button" aria-expanded="false"><span>'+esc(ar?f[2]:f[0])+'</span><span class="ic"></span></button>'
+        +'<div class="a"><p>'+esc(ar?f[3]:f[1])+'</p></div></div>';
+    }).join('');
+    $$('#faqList .q button').forEach(function(b){
+      b.addEventListener('click',function(){
+        var q=b.parentNode, a=q.querySelector('.a'), on=q.classList.toggle('on');
+        b.setAttribute('aria-expanded',on?'true':'false');
+        a.style.maxHeight = on ? (a.scrollHeight+'px') : '0px';
+      });
+    });
+  }
+
+  function renderLd(){
+    var ar=(LANG==='ar');
+    var ld=[{
+      "@context":"https://schema.org","@type":"Restaurant",
+      "name":ar?"مطعم بابا غنوج":"Baba Ghanouj Restaurant",
+      "alternateName":ar?"Baba Ghanouj Restaurant":"مطعم بابا غنوج",
+      "url":"https://baba-ghanouj.com/","image":"https://baba-ghanouj.com/logo.png","logo":"https://baba-ghanouj.com/logo.png",
+      "servesCuisine":["Syrian","Levantine","Middle Eastern","Vegetarian"],
+      "priceRange":"AED 5 – AED 65",
+      "telephone":C.phoneDial,"email":C.email,
+      "address":{"@type":"PostalAddress","streetAddress":"83 Al Khan Street","addressLocality":"Sharjah","addressCountry":"AE"},
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification",
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens":"07:00","closes":"02:00"}],
+      "hasMap":C.mapLink,
+      "sameAs":[C.instagram,C.facebook,C.tiktok].filter(Boolean),
+      "acceptsReservations":"False",
+      "hasMenu":"https://baba-ghanouj.com/"+C.menuPage,
+      "potentialAction":{"@type":"OrderAction","target":"https://wa.me/"+waDigits()}
+    },{
+      "@context":"https://schema.org","@type":"FAQPage",
+      "mainEntity":FAQ.map(function(f){
+        return {"@type":"Question","name":ar?f[2]:f[0],
+          "acceptedAnswer":{"@type":"Answer","text":ar?f[3]:f[1]}};
+      })
+    }];
+    $('#ldjson').textContent=JSON.stringify(ld);
+  }
+
+  /* ---------- UI ---------- */
+  $('#burger').addEventListener('click',function(){
+    var on=$('#ov').classList.toggle('on');
+    this.classList.toggle('open',on); this.setAttribute('aria-expanded',on?'true':'false');
+    $('#ov').setAttribute('aria-hidden',on?'false':'true');
+    document.body.style.overflow=on?'hidden':'';
+  });
+  $$('#ov a').forEach(function(a){ a.addEventListener('click',function(){
+    $('#ov').classList.remove('on'); $('#burger').classList.remove('open');
+    $('#burger').setAttribute('aria-expanded','false'); document.body.style.overflow='';
+  });});
+  $('#langBtn').addEventListener('click',function(){ applyLang(LANG==='ar'?'en':'ar'); });
+
+  var hdr=$('#hdr'), fc=$('#floatCta');
+  function onScroll(){
+    var y=window.scrollY||0;
+    hdr.classList.toggle('solid',y>60);
+    fc.classList.toggle('show',y>window.innerHeight*0.55);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e,i){ if(e.isIntersecting){ setTimeout(function(){e.target.classList.add('in');},i*100); io.unobserve(e.target);} });
+  },{threshold:.15}):null;
+  $$('.rv').forEach(function(el){ io?io.observe(el):el.classList.add('in'); });
+
+  /* banner.png — يظهر فقط إذا كانت الصورة موجودة */
+  (function(){
+    var fig=$('#heroBanner'), im=$('#heroBannerImg'), hero=$('.hero');
+    if(!C.banner){ hero.classList.add('no-banner'); return; }
+    im.onerror=function(){ hero.classList.add('no-banner'); };
+    im.src=C.banner;
+  })();
+
+  var stored=null; try{ stored=localStorage.getItem('bg_lang'); }catch(e){}
+  var urlLang=new URLSearchParams(location.search).get('lang');
+  var path=location.pathname.toUpperCase();
+  var initial = urlLang || (path.indexOf('/AR')>-1?'ar':(path.indexOf('/EN')>-1?'en':null))
+                || stored || ((navigator.language||'en').toLowerCase().indexOf('ar')===0?'ar':'en');
+  applyLang(initial,true);
+  onScroll();
+})();
+</script>
+</body>
+</html>

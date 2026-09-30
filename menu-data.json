@@ -1,0 +1,1722 @@
+{
+ "config": {
+  "name": "Baba Ghanouj Restaurant",
+  "nameAr": "مطعم بابا غنوج",
+  "currency": "AED",
+  "currencyAr": "د.إ"
+ },
+ "colours": {
+  "espresso": "#2B2620",
+  "espresso2": "#332E27",
+  "cream": "#F2EEE3",
+  "cream2": "#FBF8F1",
+  "gold": "#91BE25",
+  "goldDeep": "#4E6A10"
+ },
+ "categories": [
+  {
+   "slug": "shami",
+   "icon": "hummus",
+   "en": "Shami Dishes",
+   "ar": "الأطباق الشامية",
+   "items": [
+    {
+     "en": "Hummus Classic",
+     "ar": "حمص ناعم",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526828596148720?width=172&height=172",
+     "d": "Hummus with tahini topped with chickpeas and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص بالطحينة يعلوه حمص حب وزيت الزيتون يقدم مع الخبز الطازج والمخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Hummus Beiruti",
+     "ar": "حمص بيروتي",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526835038794550?width=172&height=172",
+     "d": "Hummus with tahini blended with parsley and olive oil, topped with parsley and pomegranate seeds, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص بالطحينة ممزوج بالبقدونس وزيت الزيتون بعلوه البقدونس وحبات الرمان يقدم مع الخبز الطازج والمخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Hummus with Nuts",
+     "ar": "حمص بالمكسرات",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526833338377606?width=172&height=172",
+     "d": "Hummus with tahini topped with nuts and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 22 • Medium AED 28 • Family AED 36)",
+     "dAr": "حمص بالطحينة يعلوه المكسرات وزيت الزيتون يقدم مع الخبز الطازج، المخلل والخضار (عادي 22 د.إ • وسط 28 د.إ • عائلي 36 د.إ)"
+    },
+    {
+     "en": "Indian Spiced Hummus",
+     "ar": "حمص سبايسي",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501376799921326?width=172&height=172",
+     "d": "Spicy hummus with tahini topped with chickpeas and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص بالطحينة سبايسي يعلوه حمص حب وزيت الزيتون يقدم مع الخبز الطازج والمخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Hummus on Foul",
+     "ar": "حمص على فول",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526835999547537?width=172&height=172",
+     "d": "Smooth hummus topped with foul beans and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص ناعم يعلوه حبات الفول وزيت الزيتون يقدم مع الخبز الطازج . المخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Baba Ghanouj",
+     "ar": "بابا غنوج",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526833848160103?width=172&height=172",
+     "d": "Grilled eggplant blended with coloured peppers, parsley and pomegranate seeds, topped with olive oil and pomegranate molasses, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "بااذنجان مشوي ممزوج بالفلفل الملون والبقدونس وحبات الرمان يعلوه زيت الزيتون ودبس الرمان يقدم مع الخبز الطازج والمخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Eggplant Mutabal",
+     "ar": "متبل باذنجان مشوي",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526833449424556?width=172&height=172",
+     "d": "Grilled eggplant blended with yoghurt and tahini, topped with olive oil, parsley and pomegranate seeds, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "باذنجان مشوي ممزوج باللبن والطحينة يعلوه زيت الزيتون والبقدونس وحبات الرمان يقدم مع الخبز الطازج . مخلل وخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Beetroot Mutabal",
+     "ar": "متبل شمندر",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501376732818129?width=172&height=172",
+     "d": "Beetroot blended with yoghurt and tahini, topped with olive oil, parsley and pomegranate seeds, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "شمندر ممزوج باللبن والطحينة يعلوه زيت الزيتون، البقدونس وحبات الرمان يقدم مع الخبز الطازج، مخلل وخضار. (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Syrian Musabaha Seeds Tahina",
+     "ar": "مسبحة حب سورية بطحينة",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526882566873108?width=172&height=172",
+     "d": "Chickpeas with tahini, garlic and olive oil, served with fresh bread, pickles and cucumber. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص حب مع الطحينة والثوم وزيت الزيتون يقدم مع الخبز الطازج .المخلل والخيار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Musabaha Seeds Oil & Lemon",
+     "ar": "مسبحة حب بالزيت",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526879506017910?width=172&height=172",
+     "d": "Chickpeas with lemon, garlic and olive oil, served with fresh bread, pickles and cucumber. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص حب مع الليمون والثوم وزيت الزيتون، يقدم مع الخبز الطازج، المخلل والخيار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Palestinians Moshabaha",
+     "ar": "مسبحة فلسطينية",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526835366887973?width=172&height=172",
+     "d": "Chickpeas, smooth hummus, tahini, spices and olive oil, served with fresh bread, pickles and cucumber. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص، حمص ناعم، طحينة،توابل وزيت زيتون يقدم مع خبز طازج، مخلل وخيار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Qudsia",
+     "ar": "قدسية",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645553/e6e9aed6-9636-4d22-ba24-c85868d73340.jpg?width=172&height=172",
+     "d": "Smooth hummus topped with mashed foul and chickpeas blended with tahini, parsley and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص ناعم يعلوه الفول المهروس وحبات الحمص الممزوجة بالطحينة والبقدونس وزيت الزيتون يقدم مع الخبز الطازج . المخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Hummus Seeds with Oil",
+     "ar": "حمص بالزيت",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526881435241815?width=172&height=172",
+     "d": "Boiled hummus whipped with olive oil, topped with chickpeas and olive oil, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "حمص مسلوق ومخفوق بزيت الزيتون يعلوه حبات الحمص وزيت الزيتون يقدم مع الخبز الطازج . المخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Hummus with Meat & Nuts",
+     "ar": "حمص باللحمة والمكسرات",
+     "p": 26.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526837869928955?width=172&height=172",
+     "d": "Hummus with tahini topped with pieces of meat, nuts and parsley, served with fresh bread, pickles and vegetables. (Regular AED 26 • Medium AED 32 • Family AED 40)",
+     "dAr": "حمص بالطحينة يعلوه قطع اللحم والمكسرات والبقدونس يقدم مع الخبز الطازج والمخلل والخضار (عادي 26 د.إ • وسط 32 د.إ • عائلي 40 د.إ)"
+    },
+    {
+     "en": "Syrian Foul Tahina",
+     "ar": "فول سوري بالطحينة",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526881556936295?width=172&height=172",
+     "d": "Syrian foul blended with tahini sauce and lemon, topped with olive oil and pomegranate seeds, served with bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "فول سوري ممزوج بصلصة طحينة، ليمون مغطى بزيت زيتون، حبوب رمان، يقدم مع خبز، مخللات و خضروات (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Syrian Foul Oil & Lemon",
+     "ar": "فول سوري بالزيت",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526834950886661?width=172&height=172",
+     "d": "Syrian foul beans blended with lemon, topped with olive oil, pomegranate seeds, parsley and tomato, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "فول سوري حب ممزوج بالليمون يعلوه زيت الزيتون وحبات الرمان والبقدونس والطماطم يقدم مع الخبز الطازج . مخلل وخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Lebanese Foul",
+     "ar": "فول لبناني",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526834476472120?width=172&height=172",
+     "d": "Lebanese foul, chickpeas, lemon, olive oil, parsley and pomegranate seeds, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "فول لبناني، حمص، ليمون، زيت زيتون، بقدونس وحبوب رمان يقدم مع خبز طازج، مخلل وخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Palestinians Foul",
+     "ar": "فول فلسطيني",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645540/d60ee5c6-ecc6-497b-97f0-33850c8c7ea7.jpg?width=172&height=172",
+     "d": "Mashed foul blended with chickpeas, lemon and green seasoning, topped with olive oil and parsley, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "فول مهروس ممزوج بحبات الحمص والليمون والتتبيلة الخضراء يعلوه زيت الزيتون والبقدونس يقدم مع الخبز الطازج . مخلل وخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Egyptian Foul",
+     "ar": "فول مصري",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526835524818170?width=172&height=172",
+     "d": "Mashed foul blended with lemon, seasoning and chilli, topped with olive oil, tomato and tahini, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "فول مهروس ممزوج بالليمون والتتبيلة والشطة يعلوه زيت الزيتون والطماطم والطحينة يقدم مع الخبز الطازج . مخلل وخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Halabya Muhamara",
+     "ar": "محمرة حلبية",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645565/229df942-3c10-4c86-853e-11f0936af427.jpg?width=172&height=172",
+     "d": "Muhamara blended with kaak, onion and spices, topped with olive oil and walnuts, served with fresh bread. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "محمرة ممزوجة بالكعك والبصل والبهارات يعلوه زيت الزيتون والجوز يقدم مع الخبز الطازج (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Labneh Cream",
+     "ar": "لبنة كريم",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526837509883490?width=172&height=172",
+     "d": "Labneh topped with olive oil, mint leaves and black olive slices, served with fresh bread, pickles and vegetables. (Regular AED 19 • Medium AED 25 • Family AED 32)",
+     "dAr": "لبنة يعلوها زيت الزيتون واوراق النعناع وشرائح الزيتون الاسود يقدم مع الخبز الطازج .المخلل والخضار (عادي 19 د.إ • وسط 25 د.إ • عائلي 32 د.إ)"
+    },
+    {
+     "en": "Labneh balls",
+     "ar": "لبنة كرات",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526829007008643?width=172&height=172",
+     "d": "Dried local labneh balls topped with olive oil, served with fresh bread and vegetables.",
+     "dAr": "لبنة كرات بلدية مجففة يعلوها زيت الزيتون يقدم مع الخبز الطازج والخضار"
+    },
+    {
+     "en": "Syrian Makdous",
+     "ar": "مكدوس سوري",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526840040138449?width=172&height=172",
+     "d": "4 pieces of eggplant stuffed with red pepper paste and walnuts, dipped in olive oil, served with fresh bread.",
+     "dAr": "4 قطع باذنجان محشو عجينة الفلفل الاحمر والجوز مغموس بزيت الزيتون يقدم مع الخبز الطازج"
+    },
+    {
+     "en": "Uncooked Kibbeh (without Meat)",
+     "ar": "كبة نية (بدون لحمة)",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526839012033801?width=172&height=172",
+     "d": "Without meat. Bulgur blended with spices, tomato, pepper molasses and olive oil.",
+     "dAr": "بدون لحم, برغل ممزوج بالتوابل والطماطم ودبس الفليفلة زيت الزيتون"
+    },
+    {
+     "en": "Mamounieh with Cream",
+     "ar": "مامونية بالقشطة (مع جبنة شلل)",
+     "p": 25.0,
+     "img": "",
+     "d": "(Regular AED 25 • Medium AED 32 • Family AED 40)",
+     "dAr": "(عادي 25 د.إ • وسط 32 د.إ • عائلي 40 د.إ)"
+    },
+    {
+     "en": "Cream and Honey",
+     "ar": "قشطة وعسل",
+     "p": 15.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "appetizers",
+   "icon": "leaf",
+   "en": "Appetizers",
+   "ar": "المقبلات",
+   "items": [
+    {
+     "en": "Mixed Appetizers",
+     "ar": "طبق مقبلات ميكس",
+     "p": 36.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369781170725555?width=172&height=172",
+     "d": "Fried kibbeh, meat and cheese sambousek, vine leaves, french fries, hummus, vegetables, pickles and fresh bread.",
+     "dAr": "تشكيلة من الكبة المقلية والسمبوسك اللحم والجبن وورق العنب بالاضافة الى البطاطس المقلية .الحمص .الخضار والمخلل . والخبز الطازج"
+    },
+    {
+     "en": "Fried Kibbeh (4) Pcs",
+     "ar": "كبة مقلية دراويش (4) قطع",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/759889/product/532645622/3e816bc0-b06b-4c9d-be8e-6cabbf5e991b.jpg?width=172&height=172",
+     "d": "A plate of four fried kibbeh pieces.",
+     "dAr": "كبة مقلية (4 قطع) طبق به أربع قطع كبة مقلية."
+    },
+    {
+     "en": "Fried Kibbeh Trabulsia (4) Pcs",
+     "ar": "كبة طرابلسية (4) قطع",
+     "p": 16.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kebbeh in Tray",
+     "ar": "كبة بالصينية",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501314110443446?width=172&height=172",
+     "d": "Filled with lamb, nuts and spices, served with vegetables and fresh ayran. (Regular AED 25 • Large AED 50)",
+     "dAr": "بحشوة لحم الضان مع المكسرات والبهارات تقدم مع الخضار ولبن العيران الطازج. (عادي 25 د.إ • كبير 50 د.إ)"
+    },
+    {
+     "en": "Grilled Halloumi",
+     "ar": "حلومي مشوي",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526847037365950?width=172&height=172",
+     "d": "Halloumi cheese with smoky char marks.",
+     "dAr": "جبنة حلومي مع علامات الفحم المدخنة."
+    },
+    {
+     "en": "Cheese Sambosa (4) Pcs",
+     "ar": "سمبوسك جبنة (4) قطع",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/750229/product/532645638/61cbbb54-be5c-47b8-8841-d15c01372d14.jpg?width=172&height=172",
+     "d": "A plate of four sambosa pieces filled with cheese.",
+     "dAr": "صحن سمبوسة جبنة (4 قطع) طبق به أربع قطع سمبوسة محشوة بالجبن."
+    },
+    {
+     "en": "Meat Sambosa (4) Pcs",
+     "ar": "سمبوسك لحم (4) قطع",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/750229/product/532645636/f5826d36-8470-47d2-a1a4-56184a1a989e.jpg?width=172&height=172",
+     "d": "A plate of four sambosa pastries filled with meat.",
+     "dAr": "سمبوسة لحم 4 قطع طبق به اربع قطع سمبوسة نوع من المعجنات الشهية محشوة باللحم."
+    },
+    {
+     "en": "Spinach Sambosa (4) Pcs",
+     "ar": "سمبوسك سبانخ (4) قطع",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645632/1d6c8b09-0bf6-4fc6-bcb7-d5387d470af1.jpg?width=172&height=172",
+     "d": "Four sambosa pieces filled with spinach.",
+     "dAr": "أربع قطع سمبوسة محشوة بالسبانخ."
+    },
+    {
+     "en": "Musakhan (5) Pcs",
+     "ar": "مسخن (5) قطع",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645628/1d6e14f0-9974-419c-afed-283f014afaaf.jpg?width=172&height=172",
+     "d": "Fresh chicken with soft caramelised onion and aromatic sumac served on crisp bread. Five tasty pieces.",
+     "dAr": "دجاج طازج مع بصل مكرمل ناعم وسماق عطري يقدم على خبز مقرمش خمس قطع شهية"
+    },
+    {
+     "en": "Cheese Roll (5) Pcs",
+     "ar": "تشيز رول (5) قطع",
+     "p": 15.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fried Potatoes",
+     "ar": "بطاطا مقلية",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369756275084136?width=172&height=172",
+     "d": "Served with mayonnaise and ketchup. (Regular AED 8 • Large AED 12)",
+     "dAr": "يقدم مع المايونيز والكاتشاب (عادي 8 د.إ • كبير 12 د.إ)"
+    },
+    {
+     "en": "Vine Leaves (Yalenji)",
+     "ar": "ورق عنب (يالانجي)",
+     "p": 20.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501376147850603?width=172&height=172",
+     "d": "10 pieces of vine leaves in olive oil.",
+     "dAr": "10 قطع من ورق العنب بالزيت الزيتون"
+    }
+   ]
+  },
+  {
+   "slug": "fatteh",
+   "icon": "fatteh",
+   "en": "Fattat Shameih",
+   "ar": "فتات شامية",
+   "items": [
+    {
+     "en": "Royal Fatteh",
+     "ar": "فتة ملوكية",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526883410431354?width=172&height=172",
+     "d": "A layer of toasted bread topped with chickpeas, tahini, yoghurt and nuts, with your choice of ghee or olive oil. (Regular AED 25 • Family AED 38)",
+     "dAr": "طبقة من الخبز المحمص يعلوها حبات الحمص والطحينية واللبن والمكسرات بالاضافة الى اختيارك من السمنة البلدية او زيت الزيتون (عادي 25 د.إ • عائلي 38 د.إ)"
+    },
+    {
+     "en": "Faksah Fatteh",
+     "ar": "فتة فقسة",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526884005220980?width=172&height=172",
+     "d": "A layer of fresh bread topped with chickpeas and chickpea gravy whipped with olive oil and salt, topped with cumin. (Regular AED 25 • Family AED 38)",
+     "dAr": "طبقة من الخبز الطازج يعلوها حبات الحمص ومرقة الحمص مخفوقة بزيت الزيتون والملح يعلوها الكمون (عادي 25 د.إ • عائلي 38 د.إ)"
+    },
+    {
+     "en": "Lebanese Fatteh",
+     "ar": "فتة لبنانية",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526844239398019?width=172&height=172",
+     "d": "A layer of toasted bread topped with chickpeas, yoghurt and nuts, with your choice of ghee or olive oil. (Regular AED 25 • Family AED 38)",
+     "dAr": "طبقة من الخبز المحمص يعلوها حبات الحمص واللبن والمكسرات بالاضافة الى اختيارك من السمنة البلدية او زيت الزيتون (عادي 25 د.إ • عائلي 38 د.إ)"
+    },
+    {
+     "en": "Palestinian Fatteh",
+     "ar": "فتة فلسطينية",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638530545588034507?width=172&height=172",
+     "d": "A mixture of hamam bread, chickpeas and tahini topped with nuts, with your choice of ghee or olive oil. (Regular AED 25 • Family AED 38)",
+     "dAr": "مزيج من خبز الحمام وحبات الحمص والطحينة يعلوها المكسرات بالاضافة الى اختيارك من السمن البلدي او زيت الزيتون (عادي 25 د.إ • عائلي 38 د.إ)"
+    },
+    {
+     "en": "Fatteh Hummus with Meat & Nuts",
+     "ar": "فتة حمص باللحمة والمكسرات",
+     "p": 32.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526884135360595?width=172&height=172",
+     "d": "A layer of toasted bread topped with chickpeas, tahini, yoghurt, pieces of meat, nuts and ghee. (Regular AED 32 • Family AED 46)",
+     "dAr": "طبقة من الخبز المحمص يعلوها حبات الحمص والطحينية واللبن وقطع اللحم والمكسرات و السمن البلدي (عادي 32 د.إ • عائلي 46 د.إ)"
+    },
+    {
+     "en": "Mixed Fries Fatteh",
+     "ar": "فتة مقالي",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863786047114571?width=172&height=172",
+     "d": "A layer of toasted bread topped with cauliflower, fried eggplant, tahini, yoghurt and nuts, with olive oil. (Regular AED 25 • Family AED 38)",
+     "dAr": "طبقة من الخبز المحمص يعلوها الزهرة، الباتنجان المقلي، الطحينية، اللبن والمكسرات بالاضافة الى زيت الزيتون (عادي 25 د.إ • عائلي 38 د.إ)"
+    }
+   ]
+  },
+  {
+   "slug": "fakhara",
+   "icon": "egg",
+   "en": "Fakhara & Fries",
+   "ar": "فخارة ومقالي",
+   "items": [
+    {
+     "en": "Mixed Fried Plate",
+     "ar": "طبق مقالي مشكلة",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863787614113320?width=172&height=172",
+     "d": "Cauliflower, eggplant and french fries, served with vegetables and fresh bread.",
+     "dAr": "طبق من الخضار المقلية يقدم مع الحمص وصوص الطحينة والخبز الطازج"
+    },
+    {
+     "en": "Ejjah Plate",
+     "ar": "طبق عجة",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645613/0bbe14ad-49e5-49b9-a4aa-d23352858da0.jpg?width=172&height=172",
+     "d": "Eggs whisked with parsley, onion, garlic and special spices.",
+     "dAr": "طبق العجة، طبق متوسطي مصنوع من البيض المخفوق والخضروات."
+    },
+    {
+     "en": "Sausage & Eggs",
+     "ar": "بيض وسجق",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526892463004651?width=172&height=172",
+     "d": "Eggs with sausage and special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج و الخضار"
+    },
+    {
+     "en": "Sasejo & Eggs",
+     "ar": "بيض و صاصيجو",
+     "p": 25.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pepperoni & Eggs",
+     "ar": "بيض و بيبروني",
+     "p": 25.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mortadella Eggs",
+     "ar": "بيض و مرتديلا",
+     "p": 25.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Omelette & Vegetables",
+     "ar": "بيض وخضار",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526890382718967?width=172&height=172",
+     "d": "Eggs whisked with vegetables and special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج و الخضار"
+    },
+    {
+     "en": "Omelette & Cheese",
+     "ar": "بيض وجبنة",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645620/98b3b3da-2bbe-4a14-8296-0d167efaaeb7.jpg?width=172&height=172",
+     "d": "Eggs whisked with cheese and special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج والخضار"
+    },
+    {
+     "en": "Shakshuka (Add Meat 8)",
+     "ar": "شكشوكة (اضف اللحم 8 درهم)",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645615/1d79e9b5-3a6d-45b8-8f9d-e68cb4f7e06d.jpg?width=172&height=172",
+     "d": "Eggs whisked and mixed with tomato, sweet pepper and spices.",
+     "dAr": "بيض مخفوق ممزوج بالطماطم والبابريكا والتوابل."
+    },
+    {
+     "en": "Omelette (Add Meat 8)",
+     "ar": "بيض اومليت (اضف اللحم 8 درهم)",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526898664185477?width=172&height=172",
+     "d": "Whisked eggs cooked plain, served with fresh bread, pickles and vegetables.",
+     "dAr": "حسب اختيارك من البيض المخفوق أو غير مكتمل النضج."
+    },
+    {
+     "en": "Qalayet Potato With Egg (Add Meat 8)",
+     "ar": "قلاية بطاطا وبيض (اضف اللحم 8 درهم)",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501375396952343?width=172&height=172",
+     "d": "Fried potato with egg and special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج و الخضار."
+    },
+    {
+     "en": "Qalayet Tomato (Add Meat 8)",
+     "ar": "قلاية بندورة (اضف اللحم 8 درهم)",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526888352192129?width=172&height=172",
+     "d": "Tomato cooked with special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج و الخضار."
+    }
+   ]
+  },
+  {
+   "slug": "lunch",
+   "icon": "pan",
+   "en": "Lunch & Dinner",
+   "ar": "غداك وعشاك",
+   "items": [
+    {
+     "en": "Kofta Meat with Vegetables",
+     "ar": "كفتة لحم بالخضار",
+     "p": 26.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638530546398470812?width=172&height=172",
+     "d": "Kofta mixed with vegetables, special spices and pomegranate sauce, served with fresh bread, pickles and vegetables.",
+     "dAr": "كفتة لحم بالخضار طبق باللحم وكفتة الخضار (كرات اللحم)."
+    },
+    {
+     "en": "Kofta Meat tahina",
+     "ar": "كفتة لحم بالطحينة",
+     "p": 26.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kufta Majua with Vegetables & Cheese",
+     "ar": "كفتة معجوقة بالخضار والجبن",
+     "p": 30.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501304877368936?width=172&height=172",
+     "d": "Kofta mixed with vegetables, special spices and cheese, served with fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج والخضار"
+    },
+    {
+     "en": "Alepian Sasejo",
+     "ar": "صاصيجو حلبي (نقانق)",
+     "p": 32.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501306331078338?width=172&height=172",
+     "d": "Served with french fries, garlic cream, lemon garlic sauce, fresh bread, pickles and vegetables.",
+     "dAr": "تقدم مع الخبز الطازج، بطاطا مقلية و الخضار."
+    },
+    {
+     "en": "Smoked Chicken Franks",
+     "ar": "نقانق دجاج مدخن",
+     "p": 30.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Potato Chicken",
+     "ar": "دجاج بطاطا",
+     "p": 26.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chicken With Vegetables",
+     "ar": "دجاج بالخضار",
+     "p": 26.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526894488489802?width=172&height=172",
+     "d": "Pieces of chicken breast topped with vegetables and special spices, topped with kashkaval cheese.",
+     "dAr": "قطع من صدر الدجاج مع الخضار والتوابل الخاصة، تعلوها جبنة القشقوان، وتقدم مع الخبز الطازج."
+    },
+    {
+     "en": "Chicken Liver",
+     "ar": "كبدة دجاج",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645604/92bbf227-62b5-419e-90f6-5259a31eeaca.jpg?width=172&height=172",
+     "d": "Fresh chicken liver cooked with onion, sweet pepper and special spices, served with fresh bread, pickles and vegetables.",
+     "dAr": "كبدة دجاج طازجة مطهوة مع البصل والبابريكا والتوابل الخاصة، تقدم مع الخبز الطازج والمخللات."
+    },
+    {
+     "en": "Mashed Potatoes With Kashkaval",
+     "ar": "بطاطا مهروسة بالقشقوان",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526895006144942?width=172&height=172",
+     "d": "Mashed potatoes mixed with spices, topped with chopped parsley and kashkaval cheese.",
+     "dAr": "بطاطا مهروسة تقدم مع جبنة قشقوان."
+    },
+    {
+     "en": "Chili Potato",
+     "ar": "بطاطا حرّة",
+     "p": 19.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526895522282003?width=172&height=172",
+     "d": "Fried potato cubes mixed with coriander and chilli, served with fresh bread, pickles and vegetables.",
+     "dAr": "بطاطا مقرمشة متبلة بعناية بنكهة حارة وغنية، تقدم كوجبة خفيفة شهية."
+    }
+   ]
+  },
+  {
+   "slug": "falafel-sandwich",
+   "icon": "sandwich",
+   "en": "Falafel Sandwich",
+   "ar": "فلافل ساندويتش",
+   "items": [
+    {
+     "en": "Falafel Sajo Sandwich",
+     "ar": "فلافل صاجو",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369743939162534?width=172&height=172",
+     "d": "Served in saj bread with tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds. (Regular AED 8 • Large AED 12)",
+     "dAr": "تقدم بالخبز الصاج، بندورة، بقدونس، مخلل، نعناع، صوص طحينة وحبات الرمان (عادي 8 د.إ • كبير 12 د.إ)"
+    },
+    {
+     "en": "Lebanese Falafel Sandwich",
+     "ar": "فلافل لبناني",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645441/8362e214-3aa2-49a0-b0d9-54b1da5a876a.jpg?width=172&height=172",
+     "d": "Served in Lebanese bread with falafel, tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds.",
+     "dAr": "تقدم بالخبز اللبناني فلافل. بندورة. بقدونس. مخلل. نعناع. صوص طحينة وحبات الرمان."
+    },
+    {
+     "en": "Baba Ghanouj Bread",
+     "ar": "فلافل خبزتنا",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369744544207195?width=172&height=172",
+     "d": "Served in fresh Arabic bread with tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds.",
+     "dAr": "تقدم بالخبز العربي الطازج . بندورة . بقدونس . مخلل . نعناع . صوص طحينة وحبات الرمان"
+    },
+    {
+     "en": "Mixed Fried Sandwich",
+     "ar": "مقالي مشكل",
+     "p": 9.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645481/85800f8f-f94a-4082-8b48-a6e99991c565.jpg?width=172&height=172",
+     "d": "In Arabic bread with cauliflower, eggplant, potato, tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds. (Regular AED 9 • Large AED 13)",
+     "dAr": "بخبز عربي قرنبيط، باذنجان، بطاطا، بندورة، بقدونس، مخلل، نعناع، صوص طحينة وحبات رمان (عادي 9 د.إ • كبير 13 د.إ)"
+    },
+    {
+     "en": "Falafel Sesame Ka'ak",
+     "ar": "فلافل كعكة بالسمسم",
+     "p": 10.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Emarati Mix",
+     "ar": "اماراتي (فلافل ومقالي)",
+     "p": 9.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369743283158792?width=172&height=172",
+     "d": "Falafel, eggplant, cauliflower, potato, vegetables and tahini sauce. (Regular AED 9 • Large AED 13)",
+     "dAr": "فلافل، باذنجان، قرنبيط، بطاطا، خضار وصلصة طحينة (عادي 9 د.إ • كبير 13 د.إ)"
+    },
+    {
+     "en": "Falafel Extra",
+     "ar": "فلافل اكسترا (تقدم بخبز فليفلة)",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369749555793280?width=172&height=172",
+     "d": "Served in chilli bread with falafel, tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds. (Regular AED 12 • Large AED 16)",
+     "dAr": "تقدم بخبز المحمرة . فلافل. بندورة . بقدونس . مخلل . نعناع . صوص طحينة وحبات الرمان (عادي 12 د.إ • كبير 16 د.إ)"
+    }
+   ]
+  },
+  {
+   "slug": "falafel-subs",
+   "icon": "falafel",
+   "en": "Falafel & Subsidiaries",
+   "ar": "الفلافل وتوابعه",
+   "items": [
+    {
+     "en": "Arabic Falafel Extra Meal",
+     "ar": "وجبة فلافل عربي اكسترا",
+     "p": 20.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369782536498094?width=172&height=172",
+     "d": "Served in chilli bread with tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds, with hummus and fries.",
+     "dAr": "تقدم بخبز محمرة بالفلفل الحار، بندورة، بقدونس، مخلل، نعناع، صوص طحينة، حبات رمان تقدم مع حمص و بطاطا"
+    },
+    {
+     "en": "Bukjet Setti Meal",
+     "ar": "وجبة فلافل بقجة ستي",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369745991250670?width=172&height=172",
+     "d": "Served in saj bread with tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds, with hummus and fries.",
+     "dAr": "يقدم مع خبز الصاج، طماطم، بقدونس، مخلل، نعناع، ​​صلصة طحينة و حب الرمان يقدم مع الحمص و البطاطا المقلية"
+    },
+    {
+     "en": "Arabic Falafel Meal",
+     "ar": "وجبة فلافل عربي",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369743790853435?width=172&height=172",
+     "d": "Served in saj bread with tomato, parsley, pickles, mint, tahini sauce and pomegranate seeds, with hummus and fries.",
+     "dAr": "تقدم بخبز الصاج . بندورة . بقدونس . مخلل . نعناع . صوص طحينة وحبات الرمان تقدم مع الحمص والبطاطا"
+    },
+    {
+     "en": "Falafel Plate",
+     "ar": "طبق فلافل",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526874569338188?width=172&height=172",
+     "d": "10 pieces of falafel served with tahini sauce, hummus, fresh bread and vegetables.",
+     "dAr": "10حبات فلافل تقدم مع صوص الطحينة، الحمص، الخبز الطازج والخضار."
+    },
+    {
+     "en": "Falafel Plate Special",
+     "ar": "طبق فلافل سبيشال",
+     "p": 14.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Falafel Stuffed Plate (Regular / Cheese)",
+     "ar": "طبق فلافل محشي (عادي / جبنة)",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638862977990597060?width=172&height=172",
+     "d": "6 pieces of stuffed falafel served with tahini sauce, hummus, fresh bread and vegetables.",
+     "dAr": "6 حبات فلافل محشية بخلطة خاصة، مكسرات قدم مع صوص طحينة, حمص,خبز طازج وخضار"
+    },
+    {
+     "en": "Mini Falafel Box 12 Pcs",
+     "ar": "ميني فلافل بوكس 12 حبة",
+     "p": 30.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "sandwiches",
+   "icon": "burger",
+   "en": "Sandwiches",
+   "ar": "تشكيلة ساندويش",
+   "items": [
+    {
+     "en": "Turkish Shawarma Sandwich",
+     "ar": "سندويش شاورما تركية",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369752541922651?width=172&height=172",
+     "d": "Shawarma sandwich prepared the Turkish way. (Regular AED 12 • Large AED 17)",
+     "dAr": "ساندوتش شاورما تركي عبارة عن ساندوتش شاورما محضرة على الطريقة التركية. (عادي 12 د.إ • كبير 17 د.إ)"
+    },
+    {
+     "en": "Shawarma Arabic Meal",
+     "ar": "وجبة شاورما عربي",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369753937754211?width=172&height=172",
+     "d": "Served with french fries, garlic cream and pickles, cut into several pieces.",
+     "dAr": "تقدم مع البطاطس المقلية وكريمة الثوم والمخللات ومقطعة إلى قطع عديدة"
+    },
+    {
+     "en": "Maria Arabic Bread",
+     "ar": "ماريا برغيف",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/1678971435/1da215e3-c550-4765-8511-1468c21f606a.jpg?width=172&height=172",
+     "d": "Minced meat mixed with onion, parsley and spices, served in Lebanese bread with fries.",
+     "dAr": "لحم مفروم ممزوج بالبصل وبقدونس وتوابل تقدم بالخبز لبناني مع بطاطا مقلية"
+    },
+    {
+     "en": "Maria Arabic Bread With Cheese",
+     "ar": "ماريا بالجبنة برغيف",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/1678966727/5fd9ccc3-86de-4613-a900-d62ad0282316.jpg?width=172&height=172",
+     "d": "Minced meat mixed with onion, parsley, spices and akkawi cheese, served in Lebanese bread with fries.",
+     "dAr": "لحم مفروم ممزوج بصل وبقدونس وتوابل وجبن عكاوي تقدم بالخبز لبناني مع بطاطا"
+    },
+    {
+     "en": "Hummus With Meat Sandwich",
+     "ar": "سندويش حمص باللحمة",
+     "p": 11.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369749877811068?width=172&height=172",
+     "d": "Smooth hummus topped with pieces of meat, nuts and parsley, with tomato and pickles.",
+     "dAr": "حمص ناعم مضاف اليه قطع اللحم والمكسرات والبقدونس . طماطم ومخلل"
+    },
+    {
+     "en": "Chicken Liver Sandwich (Regular/Extra)",
+     "ar": "سندويش كبدة دجاج (عادي/ اكسترا)",
+     "p": 10.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369751861346711?width=172&height=172",
+     "d": "Fresh chicken liver cooked with onion, sweet pepper, special spices, potato and cucumber pickles. (Regular AED 10 • Large AED 14)",
+     "dAr": "كبدة دجاج طازجة ومطهوة مع البصل والفلفل الحلو والتوابل الخاصة والبطاطا ومخلل خيار (عادي 10 د.إ • كبير 14 د.إ)"
+    },
+    {
+     "en": "Ejjah Sandwich (Regular/Extra)",
+     "ar": "سندويش عجة (عادي/ اكسترا)",
+     "p": 10.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369751816147177?width=172&height=172",
+     "d": "Ejjah omelette discs with parsley, tomato and cucumber pickles. (Regular AED 10 • Large AED 14)",
+     "dAr": "اقراص عجة مع البقدونس والطماطم ومخلل الخيار (عادي 10 د.إ • كبير 14 د.إ)"
+    },
+    {
+     "en": "Shakshuka Sandwich",
+     "ar": "سندويش شكشوكة",
+     "p": 10.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Foul Sandwich",
+     "ar": "سندويش فول",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369751468854321?width=172&height=172",
+     "d": "Mashed foul with tomato, parsley and tahini.",
+     "dAr": "فول مهروس مع طماطم بقدونس وطحينة"
+    },
+    {
+     "en": "Labneh & Makdous",
+     "ar": "لبنة ومكدوس",
+     "p": 10.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645487/2efe9fb2-82fa-448b-8a4b-c9b0e781243e.jpg?width=172&height=172",
+     "d": "Served in Lebanese bread with tomato and mint.",
+     "dAr": "تقدم بالخبز اللبناني، بندورة ونعناع."
+    },
+    {
+     "en": "Saksuka Cheese",
+     "ar": "سقسوقة جبنة حلبية",
+     "p": 10.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526845761088285?width=172&height=172",
+     "d": "Served with fresh cucumber pieces.",
+     "dAr": "تقدم مع قطع الخيارالطازج"
+    },
+    {
+     "en": "Saksuka Kurdish Cheese",
+     "ar": "سقسوقة جبنة كردية",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526844834233317?width=172&height=172",
+     "d": "Served with fresh cucumber pieces.",
+     "dAr": "تقدم مع قطع الخيارالطازج"
+    },
+    {
+     "en": "Saksuka Cheese & Pepperoni",
+     "ar": "سقسوقة جبنة و بيبروني",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/2891223260/3218a050-e54f-49be-8aa7-9188aec0ccfc.jpg?width=172&height=172",
+     "d": "Delicious saksuka with soft akkawi cheese and richly seasoned pepperoni slices, served hot.",
+     "dAr": "سقسوقة لذيذة محضرة بجبنة عكاوي طرية وشرائح بيبروني متبلة بنكهات غنية وتقدم ساخنة"
+    },
+    {
+     "en": "Saksuka Cheese & Mortadella",
+     "ar": "سقسوقة جبنة و مرتديلا",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/5b7ed25e-7fc2-44d0-9485-8de4848763ca.jpg?width=172&height=172",
+     "d": "Akkawi cheese and mortadella served in fresh toasted bread.",
+     "dAr": "جبن عكاوي ومرتديلا تقدم بالخبز الطازج المحمص"
+    },
+    {
+     "en": "Saksuka Cheese & Turkey",
+     "ar": "سقسوقة جبنة وتيركي",
+     "p": 15.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Saksuka Halloumi Cheese",
+     "ar": "سقسوقة جبنة حلوم",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/2891242564/866531b5-5197-48f6-bd13-cf99f1b48053.jpg?width=172&height=172",
+     "d": "Tasty saksuka with sausage and fresh halloumi cheese, served in fresh toasted bread.",
+     "dAr": "سقسوقة شهية نقانق مع جبنة حلوم طازجة تقدم بالخبز الطازج المحمص لوجبة لذيذة ومشبعة"
+    },
+    {
+     "en": "Toshka Sandwich",
+     "ar": "سقسوقة طوشكا",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863784216629176?width=172&height=172",
+     "d": "Carefully prepared toshka saksuka served with golden, fresh, crispy french fries.",
+     "dAr": "سقسوقة طوشكا شهية محضرة بعناية وتُقدَّم مع البطاطس المقلية الذهبية الطازجة والمقرمشة"
+    },
+    {
+     "en": "Aleppian Sausage Saksuka",
+     "ar": "سقسوقة سجق حلبي",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863783909826650?width=172&height=172",
+     "d": "Served with french fries.",
+     "dAr": "تقدم مع بطاطس مقلية"
+    },
+    {
+     "en": "Shawarma Extra Saksuka",
+     "ar": "سقسوقة شاورما اكسترا",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501167313702238?width=172&height=172",
+     "d": "Served with french fries and pickles.",
+     "dAr": "يقدم مع بطاطس مقلية ومخلل"
+    },
+    {
+     "en": "Mexican Chicken Saksuka",
+     "ar": "سقسوقة دجاج مكسيكي",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501179625957015?width=172&height=172",
+     "d": "Served with french fries and pickles.",
+     "dAr": "تقدم مع بطاطس مقلية ومخلل."
+    },
+    {
+     "en": "Potato Sandwich",
+     "ar": "سندويش بطاطا",
+     "p": 8.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/759889/product/1358210665/3b8890b7-8d0b-4ddb-91a0-40bb47d78c97_original.jpg?width=172&height=172",
+     "d": "French fries served in bread with tomato, pickles and tahini sauce. (Regular AED 8 • Large AED 12)",
+     "dAr": "بطاطس مقلية تقدم في خبز مع طماطم ومخلل وصلصة طحينة. (عادي 8 د.إ • كبير 12 د.إ)"
+    },
+    {
+     "en": "Potato Extra Sandwich (Chilli Bread)",
+     "ar": "سندويش بطاطا اكسترا (خبز بفليفلة)",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638369752212687197?width=172&height=172",
+     "d": "Served in chilli bread with ketchup, garlic cream and cucumber pickles.",
+     "dAr": "يقدم فى خبز فلفل حار مع كاتشب ، كريمة ثوم و مخلل خيار"
+    },
+    {
+     "en": "Sharing Mini Box Mix 12 Ps",
+     "ar": "شيرينغ ميني بوكس ميكس 12 قطعة",
+     "p": 45.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "manaqeesh",
+   "icon": "manakish",
+   "en": "Manaqeesh",
+   "ar": "مناقيش",
+   "items": [
+    {
+     "en": "Mexican Chicken Wrap",
+     "ar": "دجاج مكسيكي راب",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645644/906c26d6-c6df-495f-a364-d37f90534c9e.jpg?width=172&height=172",
+     "d": "Mexican chicken wrap manqousha.",
+     "dAr": "مناقيش دجاج على الطريقة المكسيكية."
+    },
+    {
+     "en": "Turkish Shawarma wrap",
+     "ar": "شاورما تركية راب",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645432/1525f8fb-1d2c-4864-a2aa-dd9d1f810755.jpg?width=172&height=172",
+     "d": "Turkish shawarma wrap manqousha.",
+     "dAr": "مناقيش بطبقة شاورما تركية."
+    },
+    {
+     "en": "Meat Belajeen",
+     "ar": "لحمة بالعجين",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526851729619968?width=172&height=172",
+     "d": "Manqousha topped with minced meat.",
+     "dAr": "مناقيش لحم بالعجين (لحم وطماطم)."
+    },
+    {
+     "en": "Meat Belajeen with Cheese",
+     "ar": "لحمة بالعجين مع جبنة",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/59d3f453-7444-435e-806b-1188b124bfe5.jpg?width=172&height=172",
+     "d": "Meat belajeen manqousha with cheese.",
+     "dAr": "مناقيش طازجة تحضر يومياً بعجينة طرية ومرنة، محشوة باللحم المفروم المتبل والجبنة البيضاء الطرية، وتقدم ساخنة وطازجة من الفرن."
+    },
+    {
+     "en": "Sausage with Cheese",
+     "ar": "جبنة وسجق",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645437/529fe1e1-0b1e-498b-8b2e-ba3186c9c35e.jpg?width=172&height=172",
+     "d": "Manqousha topped with sausage and cheese.",
+     "dAr": "مناقيش سجق و جبنة كإضافات."
+    },
+    {
+     "en": "Cheese with pepperoni",
+     "ar": "جبنة و بيبروني",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/7b5f27f0-aad5-4e2f-82e0-37388b8a7194.jpg?width=172&height=172",
+     "d": "Manqousha topped with cheese and pepperoni.",
+     "dAr": "منقوشة جبنة عكاوي مع شرائح البيبروني الطازجة اللذيذة"
+    },
+    {
+     "en": "Cheese with Turkey",
+     "ar": "جبنة و تيركي",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/cd70af78-49c0-4eaf-951c-04693e53ad14.jpg?width=172&height=172",
+     "d": "Manqousha topped with cheese and turkey.",
+     "dAr": "مناقيش شهية محضرة بالجبن العكاوي الفاخر وفوقه شرائح من الديك الرومي اللذيذ"
+    },
+    {
+     "en": "Mortadella with Kahkwan",
+     "ar": "مرتديلا مع قشقوان",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526851301825701?width=172&height=172",
+     "d": "Manqousha topped with mortadella and kashkaval cheese.",
+     "dAr": "مناقيش مرتديلا و جبنة قشقوان."
+    },
+    {
+     "en": "Egg and Cheese",
+     "ar": "بيض و جبنة",
+     "p": 13.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526854878934937?width=172&height=172",
+     "d": "Manqousha topped with egg and cheese.",
+     "dAr": "مشكل جبن مع لبنة و عسل"
+    },
+    {
+     "en": "Kraft with Honey",
+     "ar": "كرافت بالعسل",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526853318074394?width=172&height=172",
+     "d": "Manqousha topped with kraft cheese and honey.",
+     "dAr": "مناقيش كرافت بالعسل مناقيش جبنة كرافت و عسل."
+    },
+    {
+     "en": "Labneh with Vegetable",
+     "ar": "لبنة بالخضار",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526858031190591?width=172&height=172",
+     "d": "Manqousha topped with labneh and fresh vegetables.",
+     "dAr": "مناقيش مع لبنة وخضار."
+    },
+    {
+     "en": "Labneh with Zaater And Rocca",
+     "ar": "لبنة بالزعتر مع الجرجير",
+     "p": 13.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526857309539968?width=172&height=172",
+     "d": "Manqousha topped with labneh, zaatar and rocca.",
+     "dAr": "مناقيش باللبنة والزعتر والجرجير."
+    },
+    {
+     "en": "Labneh and Makdous",
+     "ar": "لبنة ومكدوس",
+     "p": 13.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/fce1083d-8fe3-4367-841f-4eac99fdf6a7.jpg?width=172&height=172",
+     "d": "Manqousha topped with labneh and makdous.",
+     "dAr": "مناقيش لذيذة محضرة بعجينة طازجة ومرنة مغطاة باللبنة الكريمية الناعمة وحبات المكدوس المخللة اللذيذة تُقدَّم ساخنة مباشرة من الفرن"
+    },
+    {
+     "en": "Labneh with Honey",
+     "ar": "لبنة بالعسل",
+     "p": 13.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526853538198537?width=172&height=172",
+     "d": "Manqousha topped with labneh and honey.",
+     "dAr": "مناقيش لبنة وعسل."
+    },
+    {
+     "en": "Mix Cheese with Honey",
+     "ar": "جبنة ميكس مع عسل",
+     "p": 13.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Falafel In Oven",
+     "ar": "فلافل مشوي بالفرن",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645438/5f12a925-2678-4ddd-aaa7-e3037d1fe7a0.jpg?width=172&height=172",
+     "d": "Manqousha topped with oven-grilled falafel.",
+     "dAr": "مناقيش مع فلافل مشوية كغطاء رئيسي."
+    },
+    {
+     "en": "Mixed Cheese",
+     "ar": "جبنة ميكس",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526851951241647?width=172&height=172",
+     "d": "Manqousha topped with a mix of cheeses.",
+     "dAr": "مناقيش بخلطة أجبان مختلفة."
+    },
+    {
+     "en": "Kashkwan Cheese",
+     "ar": "جبنة قشقوان",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526856921550706?width=172&height=172",
+     "d": "Manqousha topped with kashkaval cheese.",
+     "dAr": "مناقيش جبنة قشقوان كغطاء رئيسي."
+    },
+    {
+     "en": "Muhamarah with Kahkwan",
+     "ar": "محمرة مع قشقوان",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526856156071115?width=172&height=172",
+     "d": "Manqousha topped with muhamara and kashkaval cheese.",
+     "dAr": "مناقيش بالمحمرة وجبنة قشقوان."
+    },
+    {
+     "en": "Halloumi Cheese",
+     "ar": "جبنة حلوم",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/69078f96-436b-4621-934a-b9fed648aeed.jpg?width=172&height=172",
+     "d": "Manqousha topped with halloumi cheese.",
+     "dAr": "مناقيش طازجة محضرة يومياً بعجينة هشة وخفيفة محشوة بجبنة حلوم البيضاء"
+    },
+    {
+     "en": "Cheese & Black Olive",
+     "ar": "جبنة و زيتون",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/d58f76d6-2766-454b-a5ab-cf9ec8363455.jpg?width=172&height=172",
+     "d": "Manqousha topped with cheese and black olives.",
+     "dAr": "مناقيش لذيذة محضرة يومياً بعجينة طازجة ومرنة مغطاة بالجبن وشرائح الزيتون الأسود"
+    },
+    {
+     "en": "Kurdih Cheese",
+     "ar": "جبنة كردية",
+     "p": 13.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526857766673142?width=172&height=172",
+     "d": "Manqousha topped with Kurdish cheese.",
+     "dAr": "مناقيش بالجبن الكردي كغطاء رئيسي."
+    },
+    {
+     "en": "Nutella",
+     "ar": "نوتيلا",
+     "p": 14.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/ad3a54f4-25ba-4a51-8827-cfc7c94be24d.jpg?width=172&height=172",
+     "d": "Manqousha topped with Nutella.",
+     "dAr": "مناقيش طازجة متفوق بشوكولا النوتيلا الغنية مع رشة خفيفة من السمسم المحمص الذهبي طعم لذيذ وشهي"
+    },
+    {
+     "en": "Akawi Cheese",
+     "ar": "جبنة عكاوي",
+     "p": 11.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526857324359922?width=172&height=172",
+     "d": "Manqousha topped with akkawi cheese.",
+     "dAr": "مناقيش جبنة عكاوي كغطاء رئيسي."
+    },
+    {
+     "en": "Zatar And Cheese",
+     "ar": "جبنة و زعتر",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526856624133561?width=172&height=172",
+     "d": "Manqousha topped with akkawi cheese and zaatar.",
+     "dAr": "مناقيش جبنة و زعتر كإضافات."
+    },
+    {
+     "en": "Muhamarah",
+     "ar": "محمرة",
+     "p": 9.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526859260118060?width=172&height=172",
+     "d": "Manqousha topped with muhamara.",
+     "dAr": "مناقيش بالمحمرة ، فلفل أحمر حار وصلصة الجوز."
+    },
+    {
+     "en": "Zatar / Zatar with Vegetables",
+     "ar": "زعتر / زعتر بالخضار",
+     "p": 9.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526860067744396?width=172&height=172",
+     "d": "Classic zaatar manqousha baked fresh. (Regular AED 9 • Large AED 12)",
+     "dAr": "خبز مسطح مغطى بالزعتر، وهو خليط من توابل الشرق الأوسط. (عادي 9 د.إ • كبير 12 د.إ)"
+    },
+    {
+     "en": "Spinach",
+     "ar": "سبانخ",
+     "p": 9.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526859318310744?width=172&height=172",
+     "d": "Manqousha filled with spinach.",
+     "dAr": "خبز مسطح مغطى بالسبانخ."
+    },
+    {
+     "en": "Spinach with Cheese",
+     "ar": "سبانخ وجبنة",
+     "p": 13.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chilli Bread / Chilli Bread with Zatar",
+     "ar": "خبز بفليفلة / خبز فليفلة مع زعتر",
+     "p": 6.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/759889/product/532645479/b4eb13fb-bc4e-4974-a076-47059a1fb13c.jpg?width=172&height=172",
+     "d": "Freshly baked chilli bread.",
+     "dAr": "مناقيش بخبز الفلفل الحار."
+    },
+    {
+     "en": "Chilli Bread Box",
+     "ar": "بوكس خبز بفليفلة",
+     "p": 28.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863797550891368?width=172&height=172",
+     "d": "Box of 5 chilli breads.",
+     "dAr": "خبزالفلفل الحار حرحورة"
+    },
+    {
+     "en": "Chilli & Zattar Bread Box",
+     "ar": "بوكس خبز بفليفلة وزعتر",
+     "p": 28.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863798170902480?width=172&height=172",
+     "d": "Box of 5 chilli and zaatar breads.",
+     "dAr": "خبز رقيق بالتشيلي والزعتر"
+    }
+   ]
+  },
+  {
+   "slug": "fatira",
+   "icon": "slice",
+   "en": "Fatira",
+   "ar": "فطيرة",
+   "items": [
+    {
+     "en": "Special Cheese Pie",
+     "ar": "فطيرة جبنة سبيشيال",
+     "p": 20.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/1678748681/bc6201d9-d683-41c5-a94c-aac2ed6a8dff.jpg?width=172&height=172",
+     "d": "Hot pie filled with akkawi cheese, topped with sesame, nigella seeds and honey in soft, crisp dough.",
+     "dAr": "فطيرة ساخنة محشوة بجبنة عكاوي، مغطاة بالسمسم وحبة البركة والعسل داخل عجينة طرية ومقرمشة"
+    },
+    {
+     "en": "Falafel Pie",
+     "ar": "فطيرة الفلافل",
+     "p": 12.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/532645470/da50619b-33da-45d9-a8f4-29e529064a9b.jpg?width=172&height=172",
+     "d": "Delicious falafel pie filled with crispy falafel seasoned with authentic Levantine spices, fresh vegetables and tasty sauces.",
+     "dAr": "فطيرة فلافل لذيذة محشوة بحبات الفلافل المقرمشة والمتبلة بالبهارات الشرقية الأصيلة مع الخضروات الطازجة والصلصات الشهية"
+    },
+    {
+     "en": "Mexican Chicken",
+     "ar": "دجاج مكسيكي",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/c7d3d605-a44d-4dde-81b7-c65b1e31ea5f.jpg?width=172&height=172",
+     "d": "Delicious Mexican chicken pie filled with tender chicken, chilli peppers, onions, corn and melted cheese, served hot.",
+     "dAr": "فطيرة دجاج مكسيكية لذيذة محشوة بدجاج طري مع الفلفل الحار والبصل والذرة وجبن ذائب تُقدم ساخنة"
+    },
+    {
+     "en": "Akawi Shamiyeh",
+     "ar": "جبنة عكاوي شامية",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/5c0953e5-d4cb-4544-b51a-e5017d44b102.jpg?width=172&height=172",
+     "d": "Fresh, soft Shami akkawi cheese with a distinctive taste, served in golden crisp pastry.",
+     "dAr": "جبنة عكاوي شامية طازجة وناعمة الملمس طعم مميز، يُقدم في معجنات ذهبية مقرمشة"
+    },
+    {
+     "en": "Sausage With Cheese",
+     "ar": "جبنة وسجق",
+     "p": 16.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Meat Belajeen & Cheese",
+     "ar": "لحمة بالخضار مع جبنة",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863819238070155?width=172&height=172",
+     "d": "Hot pie filled with meat, vegetables and cheese in soft, crisp dough.",
+     "dAr": "فطيرة ساخنة محشوة باللحم والخضار والجبنة داخل عجينة طرية وقرمشة"
+    },
+    {
+     "en": "Muhamarah With Cheese",
+     "ar": "جبنة و محمرة",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863819970166103?width=172&height=172",
+     "d": "Hot pie filled with muhamara and kashkaval cheese in soft, crisp dough.",
+     "dAr": "فطيرة ساخنة محشوة بالمحمرة وجبنة قشقوان داخل عجينة طرية مقرمشة"
+    },
+    {
+     "en": "Mixed Cheese",
+     "ar": "جبنة ميكس",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863820142484780?width=172&height=172",
+     "d": "Hot pie filled with akkawi, kashkaval, mozzarella and kraft cheese in soft, crisp dough.",
+     "dAr": "فطيرة ساخنة محشوة بأنواع مختلفة من الجبنة العكاوي والقشقوان والموزاريلا والكرافت، داخل عجينة طرية ومقرمشة"
+    },
+    {
+     "en": "Zatar And Cheese",
+     "ar": "جبنة وزعتر",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638863819211379146?width=172&height=172",
+     "d": "Hot pie filled with zaatar and akkawi cheese in soft, crisp dough.",
+     "dAr": "فطيرة ساخنة محشوة بالزعتر وجبنة العكاوي داخل عجينة طرية وقرمشة"
+    },
+    {
+     "en": "Cheese Turkey",
+     "ar": "جبنة تيركي",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/65b65046-3fe9-4a6b-8a2f-ee4a42605f54.jpg?width=172&height=172",
+     "d": "Delicious pie filled with soft akkawi cheese and carefully selected turkey slices, served hot and fresh from the oven.",
+     "dAr": "فطيرة شهية محشوة بالجبن العكاوي الطري مع شرائح الديك الرومي المختارة بعناية وتُقدَّم ساخنة وطازجة مباشرة من الفرن"
+    },
+    {
+     "en": "Cheese Pepperoni",
+     "ar": "جبنة بيبروني",
+     "p": 16.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cheese Mortadella",
+     "ar": "جبنة مرتديلا",
+     "p": 16.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mashed Potato & Kashkaval Pie",
+     "ar": "فطيرة بطاطا مهروسة وقشقوان",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/2a415de1-2a0b-4320-b149-9ab341b88ea1.jpg?width=172&height=172",
+     "d": "Tasty pie with a layer of smooth mashed potato under a golden layer of kashkaval cheese, served hot and fresh.",
+     "dAr": "فطيرة شهية محضرة بطبقة من البطاطا المهروسة الناعمة مغطاة بطبقة ذهبية من جبنة القشقوان اللذيذة تُقدَّم ساخنة وطازجة"
+    }
+   ]
+  },
+  {
+   "slug": "pizza",
+   "icon": "pizza",
+   "en": "Pizza",
+   "ar": "بيتزا",
+   "items": [
+    {
+     "en": "Sausage Pizza",
+     "ar": "بيتزا سجق",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526863004038510?width=172&height=172",
+     "d": "Pizza topped with sausage and cheese.",
+     "dAr": "مصنوعة من صلصة الطماطم الكلاسيكية وجبن الموزاريلا والنقانق المقطعة، إنها وجبة مثالية لمحبي البيتزا الذين يريدون بيتزا كلاسيكية ولذيذة."
+    },
+    {
+     "en": "Mixican Chicken Pizza",
+     "ar": "بيتزا دجاج مكسيكي",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526864495481373?width=172&height=172",
+     "d": "Pizza topped with Mexican chicken, peppers and cheese.",
+     "dAr": "بيتزا مع طبقة دجاج على الطريقة المكسيكية."
+    },
+    {
+     "en": "Vegetables Pizza",
+     "ar": "بيتزا الخضار",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526863203427289?width=172&height=172",
+     "d": "Pizza topped with fresh vegetables and cheese.",
+     "dAr": "بيتزا مع مجموعة متنوعة من الخضار."
+    },
+    {
+     "en": "Margherita Pizza",
+     "ar": "بيتزا مارجريتا",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526864094563253?width=172&height=172",
+     "d": "Classic pizza with tomato and cheese.",
+     "dAr": "مصنوعة من جبن الموزاريلا الطازج والطماطم والريحان، إنها وصفة بسيطة ولذيذة"
+    },
+    {
+     "en": "Pepperoni Pizza",
+     "ar": "بيتزا بيبروني",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/1678748786/f649eea2-8935-4f1c-84e7-480fb0684404.jpg?width=172&height=172",
+     "d": "Pizza topped with pepperoni and cheese.",
+     "dAr": "بيتزا غنية بالجبنة ومغطاة بشرائح البيبروني المقرمشة"
+    },
+    {
+     "en": "Shawerma Pizza",
+     "ar": "بيتزا شاورما",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/1678750069/0f6a7d34-6267-487a-82e0-7685b2377edc.jpg?width=172&height=172",
+     "d": "Pizza topped with shawarma and cheese.",
+     "dAr": "بيتزا غنية بالجبنة وقطع الدجاج المقرمشة مع كريم الثوم وشرائح المخلل"
+    },
+    {
+     "en": "Turkey Pizza",
+     "ar": "بيتزا تيركي",
+     "p": 22.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/633933/product/a9aae78e-ff9f-47aa-bbbf-785a3f7d59d2.jpg?width=172&height=172",
+     "d": "Pizza topped with turkey and cheese.",
+     "dAr": "بيتزا تيركي شهية محضرة بعجينة طازجة مغطاة بصلصة الطماطم الغنية والجبنة الذائبة وشرائح لحم الديك الرومي الطرية"
+    }
+   ]
+  },
+  {
+   "slug": "salads",
+   "icon": "salad",
+   "en": "Salads",
+   "ar": "سلطات",
+   "items": [
+    {
+     "en": "Tabouleh",
+     "ar": "تبولة",
+     "p": 17.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526863819409269?width=172&height=172",
+     "d": "Chopped parsley with small tomato pieces and bulgur, with olive oil and lemon.",
+     "dAr": "بقدونس مفروم مع قطع طماطم صغيرة وبرغل بالاضافة الى زيت الزيتون والحامض"
+    },
+    {
+     "en": "Fattoush",
+     "ar": "فتوش",
+     "p": 17.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526864467375928?width=172&height=172",
+     "d": "Lettuce, tomato, cucumber and pomegranate seeds, served with toasted bread, lemon, pomegranate molasses and olive oil.",
+     "dAr": "قطع خس . طماطم وخيار وحبات الرمان تقدم مع الخبز المحمص والحامض ودبس الرمان وزيت الزيتون"
+    },
+    {
+     "en": "Eggplant Fattouh",
+     "ar": "فتوش باذنجان",
+     "p": 17.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526864532808297?width=172&height=172",
+     "d": "Pieces of fried eggplant with lettuce, tomato, cucumber and pomegranate seeds, served with toasted bread and tahini sauce.",
+     "dAr": "قطع من الباذنجان المقلي والخس . طماطم وخيار وحبات الرمان تقدم مع الخبز المحمص وصوص الطحينية"
+    },
+    {
+     "en": "Arabic Salad",
+     "ar": "سلطة عربية",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526865655615117?width=172&height=172",
+     "d": "Cut lettuce, tomato, cucumber, pomegranate seeds, lemon and olive oil.",
+     "dAr": "قطع خس. طماطم وخيار وحبات الرمان والحامض وزيت الزيتون"
+    },
+    {
+     "en": "Rocca Salad",
+     "ar": "سلطة جرجير",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526865152430728?width=172&height=172",
+     "d": "Rocca leaves with radish, onion, pomegranate seeds, lemon, pomegranate molasses and olive oil.",
+     "dAr": "اوراق الجرجير مع الفجل والبصل وحبات الرمان والحامض ودبس الرمان وزيت الزيتون"
+    },
+    {
+     "en": "Falafel Salad",
+     "ar": "سلطة فلافل",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526865240803491?width=172&height=172",
+     "d": "Pieces of falafel with lettuce, tomato, cucumber, pomegranate seeds and tahini.",
+     "dAr": "قطع من الفلافل والخس . طماطم وخيار وحبات الرمان والطحينية"
+    },
+    {
+     "en": "Yogurts And Cucumber Salad",
+     "ar": "سلطة لبن بخيار",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526866237784734?width=172&height=172",
+     "d": "Small pieces of cucumber with yoghurt and mint.",
+     "dAr": "قطع من الخيار مع اللبن والنعناع"
+    },
+    {
+     "en": "Mix Vegetables",
+     "ar": "صحن خضار ميكس",
+     "p": 6.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638530556188979722?width=172&height=172",
+     "d": "A plate with an assortment of mixed fresh vegetables. (Regular AED 6 • Large AED 12)",
+     "dAr": "صحن خضار مشكل طبق مع تشكيلة خضروات مشكلة. (عادي 6 د.إ • كبير 12 د.إ)"
+    }
+   ]
+  },
+  {
+   "slug": "frozen",
+   "icon": "frozen",
+   "en": "Frozen Household",
+   "ar": "علب منزلية مفرزة",
+   "items": [
+    {
+     "en": "Kebbeh in Tray",
+     "ar": "كبة بالصينية",
+     "p": 25.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638501314110443446?width=172&height=172",
+     "d": "Filled with lamb, nuts and spices, served with vegetables and fresh ayran. (Regular AED 25 • Large AED 50)",
+     "dAr": "بحشوة لحم الضان مع المكسرات والبهارات تقدم مع الخضار ولبن العيران الطازج. (عادي 25 د.إ • كبير 50 د.إ)"
+    },
+    {
+     "en": "Fried Kebbeh Darwish (10 pcs)",
+     "ar": "كبة مقلية داروييش (10 حبات)",
+     "p": 35.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638502601724396797?width=172&height=172",
+     "d": "Kept frozen, ready to fry and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للقلي والتقديم"
+    },
+    {
+     "en": "Fried Kebbeh Tarabulsia (10 pcs)",
+     "ar": "كبة مقلية طرابلسية (10 حبات)",
+     "p": 35.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kebbeh Labnyeh (12 pcs)",
+     "ar": "كبة لبنية (12 حبة)",
+     "p": 26.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/750229/product/532645616/ac596d93-4fc2-4a16-91b6-2b18cf4da292_original.jpg?width=172&height=172",
+     "d": "Kept frozen, ready to cook and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للطبخ والتقديم"
+    },
+    {
+     "en": "Shish Barak 1/2 Kg",
+     "ar": "شيش برك 1/2 كغ",
+     "p": 30.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/750229/product/532645614/b31c0df0-e3d0-4528-9cf7-8ce85e8d0d2f_original.jpg?width=172&height=172",
+     "d": "Kept frozen, ready to cook and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للطبخ والتقديم"
+    },
+    {
+     "en": "Sambousek Meat (12 pcs)",
+     "ar": "سمبوسك لحم (12 حبة)",
+     "p": 28.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638502603250835470?width=172&height=172",
+     "d": "Kept frozen, ready to fry and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للقلي والتقديم"
+    },
+    {
+     "en": "Sambousek Cheese (12 pcs)",
+     "ar": "سمبوسك جبنة (12 حبة)",
+     "p": 28.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638504380460416489?width=172&height=172",
+     "d": "Kept frozen, ready to fry and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للقلي والتقديم"
+    },
+    {
+     "en": "Sambousek Spinach (12 pcs)",
+     "ar": "سمبوسك سبانخ (12 حبة)",
+     "p": 28.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638504381645627011?width=172&height=172",
+     "d": "Kept frozen, ready to fry and serve.",
+     "dAr": "تحفظ مفرزة جاهزة للقلي والتقديم"
+    },
+    {
+     "en": "Spring Roll Cheese (12 pcs)",
+     "ar": "جبنة رول (12 حبة)",
+     "p": 28.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Musakhan (12 pcs)",
+     "ar": "مسخن (12 حبة)",
+     "p": 28.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "juices",
+   "icon": "juice",
+   "en": "Juices & Cold Drinks",
+   "ar": "العصائر والمشروبات الباردة",
+   "items": [
+    {
+     "en": "Ice tea peach",
+     "ar": "ايس تي خوخ",
+     "p": 12.0,
+     "img": "",
+     "d": "(Glass AED 12 • 1 Litre AED 30)",
+     "dAr": "(كاسة 12 د.إ • 1 لتر 30 د.إ)"
+    },
+    {
+     "en": "Passion fruit mojito",
+     "ar": "موهيتو باشن فروت",
+     "p": 15.0,
+     "img": "",
+     "d": "(Glass AED 15 • 1 Litre AED 30)",
+     "dAr": "(كاسة 15 د.إ • 1 لتر 30 د.إ)"
+    },
+    {
+     "en": "Strawberry mojito",
+     "ar": "موهيتو فراولة",
+     "p": 15.0,
+     "img": "",
+     "d": "(Glass AED 15 • 1 Litre AED 30)",
+     "dAr": "(كاسة 15 د.إ • 1 لتر 30 د.إ)"
+    },
+    {
+     "en": "Avocado",
+     "ar": "افوكادو",
+     "p": 18.0,
+     "img": "",
+     "d": "(Glass AED 18 • 1 Litre AED 32)",
+     "dAr": "(كاسة 18 د.إ • 1 لتر 32 د.إ)"
+    },
+    {
+     "en": "Pomegranate",
+     "ar": "رمان",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507280030114093?width=172&height=172",
+     "d": "Made from carefully selected ripe pomegranates, rich in antioxidants. (Glass AED 18 • 1 Litre AED 32)",
+     "dAr": "مصنوع من ثمار الرمان الناضجة المختارة بعناية، يجمع الحلاوة والحموضة بتوازن، وغني بمضادات الأكسدة، مما يجعله خياراً صحياً ولذيذاً. (كاسة 18 د.إ • 1 لتر 32 د.إ)"
+    },
+    {
+     "en": "Milk and banana cocktail",
+     "ar": "كوكتيل حليب وموز",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507284153311223?width=172&height=172",
+     "d": "A refreshing cocktail made with banana and milk. (Glass AED 16 • 1 Litre AED 28)",
+     "dAr": "كوكتيل منعش مصنوع من الموز والحليب. (كاسة 16 د.إ • 1 لتر 28 د.إ)"
+    },
+    {
+     "en": "Fruit cocktail",
+     "ar": "كوكتيل فواكه",
+     "p": 16.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507281818338699?width=172&height=172",
+     "d": "Made from a blend of seasonal fruits. (Glass AED 16 • 1 Litre AED 28)",
+     "dAr": "مصنوع من مزيج الفواكه الموسمية، ويساعدك على الحصول على احتياجاتك اليومية من الفيتامينات والعناصر الغذائية. (كاسة 16 د.إ • 1 لتر 28 د.إ)"
+    },
+    {
+     "en": "Orange",
+     "ar": "برتقال",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507286214627088?width=172&height=172",
+     "d": "Naturally sweet and refreshing citrus juice, rich in vitamin C. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "عصير يجمع الحلاوة الطبيعية ونكهة الحمضيات المنعشة، غني بفيتامين ج، يروي العطش ويعد إضافة صحية إلى نظامك الغذائي اليومي. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Strawberry",
+     "ar": "فراولة",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507276366737505?width=172&height=172",
+     "d": "Refreshing and delicious juice, rich in natural vitamins and minerals. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "عصير منعش ولذيذ، غني بالفيتامينات والمعادن الطبيعية، وبديل صحي للمشروبات السكرية. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Lemon with mint",
+     "ar": "ليمون بالنعناع",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507276888309277?width=172&height=172",
+     "d": "Made from fresh lemon and mint with a touch of sweetness. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "مصنوع من مزيج الليمون الطازج والنعناع ولمسة من الحلاوة، يروي العطش ويمكن الاستمتاع به في أي وقت من اليوم. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Lemonade",
+     "ar": "ليموناضة",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507277312105037?width=172&height=172",
+     "d": "Made from real lemon with a touch of sweetness, perfectly balanced. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "مصنوع من الليمون الحقيقي ولمسة من الحلاوة بتوازن مثالي، ليروي العطش ويمنحك طعم الليمون الطازج في أي وقت من اليوم. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Mango",
+     "ar": "مانغو",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507278819985755?width=172&height=172",
+     "d": "Made from fresh, ripe mangoes, carefully selected for a perfect balance of sweetness and acidity. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "مصنوع من ثمار المانجو الطازجة والناضجة، المختارة بعناية لتحقيق توازن مثالي بين الحلاوة والحموضة. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Pineapple",
+     "ar": "اناناس",
+     "p": 15.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507283559647804?width=172&height=172",
+     "d": "Sweet tropical drink made from blended pineapple pulp, rich in vitamin C. (Glass AED 15 • 1 Litre AED 26)",
+     "dAr": "مشروب استوائي حلو مصنوع بخلط لب الأناناس، غني بفيتامين ج ويحتوي على إنزيمات قد تساعد على الهضم. (كاسة 15 د.إ • 1 لتر 26 د.إ)"
+    },
+    {
+     "en": "Fresh ayran",
+     "ar": "لبن عيران طازج",
+     "p": 5.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507284724031326?width=172&height=172",
+     "d": "A traditional Turkish yoghurt-based drink. (Glass AED 5 • 1 Litre AED 16)",
+     "dAr": "مشروب تركي تقليدي يعتمد على الزبادي. (كاسة 5 د.إ • 1 لتر 16 د.إ)"
+    },
+    {
+     "en": "Soft Drink",
+     "ar": "مشروبات غازية",
+     "p": 4.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Small water 500 ml",
+     "ar": "مياه صغيرة 500 مل",
+     "p": 2.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/Water_636812416300202380.jpg?width=172&height=172",
+     "d": "Water to keep you hydrated and refreshed.",
+     "dAr": "مياه للمحافظة على الترطيب والانتعاش."
+    }
+   ]
+  },
+  {
+   "slug": "hot-drinks",
+   "icon": "coffee",
+   "en": "Hot Drinks",
+   "ar": "المشروبات الساخنة",
+   "items": [
+    {
+     "en": "Tea Green - Red",
+     "ar": "شاي على كيفك (احمر - اخضر)",
+     "p": 4.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/759889/product/532645550/f236cb1c-25cd-43c8-8a00-a4cff577f275.jpg?width=172&height=172",
+     "d": "Fine red tea carefully brewed with a rich aroma and a refreshing, comforting taste.",
+     "dAr": "شاي أحمر فاخر محضر بعناية فائقة يتميز برائحة عطرية غنية وطعم منعش ومريح يناسب جميع الأوقات"
+    },
+    {
+     "en": "Karak Tea",
+     "ar": "شاي كرك",
+     "p": 5.0,
+     "img": "https://images.deliveryhero.io/image/global-menu-service/TB_AE/vendor/759889/product/532645557/52cb39c1-0a3a-4d7f-8986-c024db438772.jpg?width=172&height=172",
+     "d": "Rich spiced karak tea with milk.",
+     "dAr": "شاي كرك فاخر بنكهة غنية وعطرية مميزة يتم تحضيره بعناية فائقة من أجود أنواع الشاي المختارة بعناية ويُقدم ساخناً لتجربة شرب لا تُنسى"
+    },
+    {
+     "en": "Turkish Coffee",
+     "ar": "قهوة تركية",
+     "p": 10.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/blob_637507285666585046?width=172&height=172",
+     "d": "Traditional Turkish coffee.",
+     "dAr": "كوب قهوة"
+    },
+    {
+     "en": "Espresso",
+     "ar": "اسبريسو",
+     "p": 8.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "desserts",
+   "icon": "kunafa",
+   "en": "Desserts",
+   "ar": "تحلاية",
+   "items": [
+    {
+     "en": "Nutella Crepe",
+     "ar": "كريب نوتيلا",
+     "p": 18.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638530555283787149?width=172&height=172",
+     "d": "Crepe filled with Nutella.",
+     "dAr": "كريب رقيق ودافئ محشو بشوكولاتة النوتيلا الغنية لإرضاء رغبتك في الحلويات."
+    },
+    {
+     "en": "Fettuccine Crepe",
+     "ar": "كريب فوتوتشيني",
+     "p": 20.0,
+     "img": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638526873700587298?width=172&height=172",
+     "d": "Crepe with white chocolate and Nutella.",
+     "dAr": "كريب مقطع إلى شرائح تشبه الفيتوتشيني، مغطى بالشوكولاتة البيضاء والنوتيلا."
+    },
+    {
+     "en": "Kunafa Chees",
+     "ar": "كنافة بالجبنة",
+     "p": 16.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nutella Kunafa Chees",
+     "ar": "كنافة جبنة بالنوتيلا",
+     "p": 20.0,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  }
+ ]
+}
