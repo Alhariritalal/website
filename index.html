@@ -81,18 +81,23 @@ var CONFIG = {
   branches: [
     { cityEn:"Sharjah", cityAr:"الشارقة", nameEn:"Al Khan",          nameAr:"الخان",
       phones:["065 222 304","0555 914 914"], tel:["+97165222304","+971555914914"],
+      menu:"https://www.baba-ghanouj.com/Menu_Sharjah.pdf",
       mapQuery:"Baba+Ghanouj+Restaurant+Al+Khan+Street+Sharjah" },
     { cityEn:"Sharjah", cityAr:"الشارقة", nameEn:"Muwaileh",         nameAr:"مويلح",
       phones:["06 558 6090","0565 914 914"], tel:["+97165586090","+971565914914"],
+      menu:"https://www.baba-ghanouj.com/Menu_Sharjah.pdf",
       mapQuery:"Baba+Ghanouj+Restaurant+Muwaileh+Sharjah" },
     { cityEn:"Dubai",   cityAr:"دبي",     nameEn:"Al Barsha 1",      nameAr:"البرشاء 1",
       phones:["04 354 1000","050 416 2015"], tel:["+97143541000","+971504162015"],
+      menu:"https://www.baba-ghanouj.com/Menu_Dubai.pdf",
       mapQuery:"Baba+Ghanouj+Restaurant+Al+Barsha+1+Dubai" },
     { cityEn:"Dubai",   cityAr:"دبي",     nameEn:"Deira Gold Souq",  nameAr:"ديرة سوق الذهب",
       phones:["04 33 55 312","052 443 6085"], tel:["+97143355312","+971524436085"],
+      menu:"https://www.baba-ghanouj.com/Menu_Dubai.pdf",
       mapQuery:"Baba+Ghanouj+Restaurant+Deira+Gold+Souq+Dubai" },
     { cityEn:"Ajman",   cityAr:"عجمان",   nameEn:"Ajman Corniche",   nameAr:"كورنيش عجمان",
       phones:["06 558 1015","05 662266 17"], tel:["+97165581015","+971566226617"],
+      menu:"https://www.baba-ghanouj.com/Menu_Sharjah.pdf",
       mapQuery:"Baba+Ghanouj+Restaurant+Ajman+Corniche" }
   ],
 
@@ -400,6 +405,9 @@ html[lang="ar"] .branch .bc{letter-spacing:.02em;text-transform:none;font-size:.
 html[lang="ar"] .branch h3{font-family:var(--arabic);font-weight:700}
 .branch .bp{align-self:flex-start;color:var(--ink);text-decoration:none;direction:ltr;unicode-bidi:isolate;font-size:1rem}
 .branch .bp:hover{color:var(--green-deep)}
+.branch .bmenu{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:9px 16px;border-radius:999px;background:var(--green);color:var(--ink);font-size:.85rem;font-weight:500;text-decoration:none;transition:background .2s}
+.branch .bmenu:hover{background:var(--green-deep);color:#fff}
+.branch .bmenu svg{width:16px;height:16px}
 .branch .bact{display:flex;gap:14px;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);flex-wrap:wrap}
 .branch .bact a,.branch .bact button{background:none;border:0;padding:0;font:inherit;font-size:.85rem;color:var(--green-deep);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 
@@ -719,7 +727,7 @@ var I18N = {
  "Al Khan Street, Sharjah":"شارع الخان، الشارقة",
  "Sharjah · Dubai · Ajman · Since 2013":"الشارقة · دبي · عجمان · منذ ٢٠١٣",
  "Five Branches Across the UAE":"خمسة فروع في الإمارات","Our Branches":"فروعنا",
- "Show on map":"اعرض على الخريطة","Directions":"الاتجاهات",
+ "Show on map":"اعرض على الخريطة","View Menu":"اطّلع على المنيو","Directions":"الاتجاهات",
  "Call us":"اتصل بنا","Email":"البريد الإلكتروني","Address":"العنوان",
  "Explore":"تصفّح","Contact":"تواصل معنا",
  "Baba Ghanouj Restaurant. All rights reserved.":"مطعم بابا غنوج. جميع الحقوق محفوظة.",
@@ -819,6 +827,7 @@ var FAQ = [
       return '<div class="branch rv in'+((C.curMap||C.mapQuery)===b.mapQuery?' on':'')+'">'
         +'<span class="bc">'+esc(ar?b.cityAr:b.cityEn)+'</span>'
         +'<h3>'+esc(ar?b.nameAr:b.nameEn)+'</h3>'+ph
+        +(b.menu?'<a class="bmenu" href="'+esc(b.menu)+'" target="_blank" rel="noopener">'+S+'<path d="M4 6h16M4 12h16M4 18h10"/></svg>'+esc(t('View Menu'))+'</a>':'')
         +'<div class="bact"><button type="button" data-i="'+i+'">'+esc(t('Show on map'))+'</button>'
         +'<a href="https://www.google.com/maps/search/?api=1&query='+esc(b.mapQuery)+'" target="_blank" rel="noopener">'+esc(t('Directions'))+'</a></div></div>';
     }).join('');
